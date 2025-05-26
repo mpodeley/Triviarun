@@ -1,2 +1,2 @@
 # Triviarun
-Tricia sibre running
+Trivia sobre running
