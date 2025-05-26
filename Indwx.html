@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia para Runners</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f9ff; /* Tailwind sky-50 */
+        }
+        .question-card {
+            background-color: white;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+            padding: 1.5rem; /* p-6 */
+            margin-bottom: 1rem; /* mb-4 */
+        }
+        @media (min-width: 640px) { /* sm breakpoint */
+            .question-card {
+                padding: 2rem; /* p-8 */
+            }
+        }
+        .option-button {
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+        }
+        .option-button:hover {
+            transform: translateY(-2px);
+        }
+        .correct {
+            background-color: #10b981 !important; /* Tailwind emerald-500 */
+            color: white !important;
+            border-color: #059669 !important; /* Tailwind emerald-600 */
+        }
+        .incorrect {
+            background-color: #ef4444 !important; /* Tailwind red-500 */
+            color: white !important;
+            border-color: #dc2626 !important; /* Tailwind red-600 */
+        }
+        .feedback-message {
+            min-height: 24px; /* Para evitar saltos de layout */
+            font-weight: 500; /* medium */
+        }
+        /* Estilo para la barra de progreso */
+        .progress-bar-container {
+            width: 100%;
+            background-color: #e0e0e0; /* Gris claro */
+            border-radius: 0.5rem; /* rounded-lg */
+            overflow: hidden;
+            margin-bottom: 1.5rem; /* mb-6 */
+        }
+        .progress-bar {
+            height: 12px;
+            background-color: #38bdf8; /* Tailwind sky-500 */
+            width: 0%; /* Inicia en 0 */
+            transition: width 0.3s ease-in-out;
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-2 sm:p-4">
+    <div id="game-container" class="w-full max-w-2xl mx-auto">
+
+        <div id="start-screen" class="question-card text-center">
+            <h1 class="text-3xl sm:text-4xl font-bold text-sky-700 mb-4 sm:mb-6">Trivia para Runners</h1>
+            <img src="https://placehold.co/300x180/38bdf8/ffffff?text=¡A+Correr+y+Aprender!" alt="Imagen de inicio del juego de trivia de running" class="mx-auto mb-4 sm:mb-6 rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/300x180/cccccc/ffffff?text=Error+al+cargar+imagen';">
+            <p class="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8">¡Pon a prueba tus conocimientos sobre el mundo del running! ¿Estás listo para el desafío?</p>
+            <button id="start-button" class="w-full sm:w-auto bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-shadow">
+                Comenzar Trivia
+            </button>
+        </div>
+
+        <div id="game-screen" class="question-card hidden">
+            <div class="flex justify-between items-center mb-2 sm:mb-4">
+                <p class="text-lg sm:text-xl font-semibold text-sky-700">Pregunta <span id="question-number"></span> de <span id="total-questions"></span></p>
+                <p class="text-lg sm:text-xl font-semibold text-sky-700">Puntaje: <span id="score">0</span></p>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+            <h2 id="question-text" class="text-xl sm:text-2xl font-medium text-gray-800 mb-6 sm:mb-8 min-h-[5rem] sm:min-h-[6rem] flex items-center"></h2>
+            <div id="options-container" class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
+                </div>
+            <div id="feedback-message" class="feedback-message text-center mb-4 sm:mb-6 text-sm sm:text-base"></div>
+            <button id="next-question-button" class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 rounded-lg text-lg shadow-md hover:shadow-lg transition-shadow hidden">
+                Siguiente Pregunta
+            </button>
+        </div>
+
+        <div id="end-screen" class="question-card text-center hidden">
+            <h1 class="text-3xl sm:text-4xl font-bold text-sky-700 mb-4 sm:mb-6">¡Trivia Completada!</h1>
+            <img src="https://placehold.co/300x180/10b981/ffffff?text=¡Meta+Alcanzada!" alt="Imagen de fin del juego de trivia de running" class="mx-auto mb-4 sm:mb-6 rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/300x180/cccccc/ffffff?text=Error+al+cargar+imagen';">
+            <p class="text-xl sm:text-2xl text-gray-700 mb-3 sm:mb-4">Tu puntaje final es:</p>
+            <p id="final-score" class="text-4xl sm:text-5xl font-bold text-sky-600 mb-6 sm:mb-8"></p>
+            <p id="final-message" class="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8"></p>
+            <button id="restart-button" class="w-full sm:w-auto bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 sm:px-8 rounded-lg text-lg shadow-md hover:shadow-lg transition-shadow">
+                Jugar de Nuevo
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- Elementos del DOM ---
+        const startScreen = document.getElementById('start-screen');
+        const gameScreen = document.getElementById('game-screen');
+        const endScreen = document.getElementById('end-screen');
+
+        const startButton = document.getElementById('start-button');
+        const nextQuestionButton = document.getElementById('next-question-button');
+        const restartButton = document.getElementById('restart-button');
+
+        const questionNumberEl = document.getElementById('question-number');
+        const totalQuestionsEl = document.getElementById('total-questions');
+        const scoreEl = document.getElementById('score');
+        const questionTextEl = document.getElementById('question-text');
+        const optionsContainer = document.getElementById('options-container');
+        const feedbackMessageEl = document.getElementById('feedback-message');
+        const finalScoreEl = document.getElementById('final-score');
+        const finalMessageEl = document.getElementById('final-message');
+        const progressBar = document.getElementById('progress-bar');
+
+        // --- Preguntas de la Trivia ---
+        // Se agregan más preguntas para un total aproximado de 120.
+        const questions = [
+            // Bloque original (20 preguntas)
+            { question: "¿Cuál es la distancia oficial de una maratón?", options: ["40 km", "42.195 km", "45 km", "38.5 km"], answer: "42.195 km" },
+            { question: "¿Qué significa 'Plogging'?", options: ["Correr muy rápido", "Correr recogiendo basura", "Correr en grupo", "Correr en la playa"], answer: "Correr recogiendo basura" },
+            { question: "¿Cuál de estos es un famoso corredor de larga distancia keniano?", options: ["Usain Bolt", "Eliud Kipchoge", "Michael Johnson", "Carl Lewis"], answer: "Eliud Kipchoge" },
+            { question: "¿Qué es el 'tempo run'?", options: ["Una carrera muy lenta y larga", "Una carrera a un ritmo constante y desafiante", "Carreras cortas y explosivas", "Correr sin reloj"], answer: "Una carrera a un ritmo constante y desafiante" },
+            { question: "¿En qué ciudad se celebra la maratón más antigua del mundo (anual e ininterrumpida)?", options: ["Nueva York", "Londres", "Boston", "Berlín"], answer: "Boston" },
+            { question: "¿Qué son las 'series' o 'intervalos' en el entrenamiento de running?", options: ["Descansos largos entre carreras", "Repeticiones de distancias cortas a alta intensidad con recuperaciones", "Correr siempre la misma distancia", "Correr en una pista de atletismo"], answer: "Repeticiones de distancias cortas a alta intensidad con recuperaciones" },
+            { question: "Completar una carrera de 100 metros en menos de 10 segundos es un logro principalmente de:", options: ["Maratonistas", "Velocistas", "Corredores de trail", "Ultramaratonistas"], answer: "Velocistas" },
+            { question: "¿Qué es el 'drop' en una zapatilla de running?", options: ["El peso de la zapatilla", "El color de la zapatilla", "La diferencia de altura entre el talón y la puntera", "El tipo de suela"], answer: "La diferencia de altura entre el talón y la puntera" },
+            { question: "¿Cuál es el principal beneficio de los 'estiramientos dinámicos' antes de correr?", options: ["Relajar los músculos al máximo", "Aumentar la flexibilidad estática", "Preparar los músculos para el movimiento y aumentar el flujo sanguíneo", "Prevenir todas las lesiones"], answer: "Preparar los músculos para el movimiento y aumentar el flujo sanguíneo" },
+            { question: "¿Qué significa 'PR' o 'PB' en el contexto del running?", options: ["Pausa Requerida / Pausa Breve", "Preparación Rápida / Preparación Básica", "Personal Record / Personal Best (Mejor marca personal)", "Pista Rápida / Pista Buena"], answer: "Personal Record / Personal Best (Mejor marca personal)" },
+            { question: "¿Qué tipo de carrera es la 'Western States 100'?", options: ["Una maratón de ciudad", "Una carrera de 100 metros planos", "Una ultramaratón de 100 millas por montaña", "Una carrera de relevos"], answer: "Una ultramaratón de 100 millas por montaña" },
+            { question: "¿Cuál es la función principal de los carbohidratos para un corredor?", options: ["Reparar músculos", "Proveer energía", "Hidratar", "Mejorar la digestión"], answer: "Proveer energía" },
+            { question: "El término 'Fartlek' proviene del sueco y significa:", options: ["Juego de velocidad", "Correr lento", "Resistencia pura", "Técnica de montaña"], answer: "Juego de velocidad" },
+            { question: "¿Qué es la cadencia en el running?", options: ["La distancia total recorrida", "El número de pasos por minuto", "La velocidad promedio", "La inclinación del terreno"], answer: "El número de pasos por minuto" },
+            { question: "¿Cuál de estos NO es uno de los 'Majors' (grandes maratones del mundo)?", options: ["Maratón de Tokio", "Maratón de París", "Maratón de Chicago", "Maratón de Londres"], answer: "Maratón de París" },
+            { question: "¿Qué es el VO2 Máx?", options: ["La cantidad máxima de oxígeno que el cuerpo puede utilizar durante el ejercicio intenso", "La velocidad máxima que puedes alcanzar", "Tu ritmo cardíaco en reposo", "La capacidad pulmonar total"], answer: "La cantidad máxima de oxígeno que el cuerpo puede utilizar durante el ejercicio intenso" },
+            { question: "Correr 'descalzo' o con calzado minimalista se asocia a menudo con qué tipo de pisada:", options: ["Pisada de talón fuerte", "Pisada de mediopié o antepié", "Pisada supinadora extrema", "No afecta la pisada"], answer: "Pisada de mediopié o antepié" },
+            { question: "¿Qué es un 'pacer' o 'liebre' en una carrera popular?", options: ["Un corredor que marca un ritmo constante para ayudar a otros a alcanzar un tiempo objetivo", "El corredor más rápido de la carrera", "Alguien que corre fuera de la ruta oficial", "Un tipo de calzado especial"], answer: "Un corredor que marca un ritmo constante para ayudar a otros a alcanzar un tiempo objetivo" },
+            { question: "¿Cuál es una recomendación común para la hidratación durante carreras largas?", options: ["Beber solo al final de la carrera", "Beber grandes cantidades de agua de una vez", "Beber pequeñas cantidades de líquido regularmente", "No beber nada para evitar calambres"], answer: "Beber pequeñas cantidades de líquido regularmente" },
+            { question: "El 'muro' en una maratón se refiere a:", options: ["Una pared física en el recorrido", "El punto donde los espectadores animan más", "Una sensación de agotamiento extremo, usualmente por depleción de glucógeno", "La línea de meta"], answer: "Una sensación de agotamiento extremo, usualmente por depleción de glucógeno" },
+
+            // --- Nuevas Preguntas (Bloque 1: 20 preguntas) ---
+            { question: "¿Qué atleta ostenta el récord mundial masculino de maratón (a fecha de finales de 2023)?", options: ["Eliud Kipchoge", "Kelvin Kiptum", "Kenenisa Bekele", "Wilson Kipsang"], answer: "Kelvin Kiptum" },
+            { question: "¿Qué es la 'pronación' en la pisada de un corredor?", options: ["El movimiento del pie hacia afuera al impactar", "El movimiento del pie hacia adentro para absorber el impacto", "Correr de puntillas", "Correr con el talón"], answer: "El movimiento del pie hacia adentro para absorber el impacto" },
+            { question: "¿Cuál es la distancia de una carrera de 'media maratón'?", options: ["20 km", "21.0975 km", "25 km", "15 km"], answer: "21.0975 km" },
+            { question: "La 'periodización' en el entrenamiento de running se refiere a:", options: ["Correr siempre al mismo ritmo", "Dividir el entrenamiento en fases con objetivos específicos", "Entrenar solo en ciertos periodos del año", "Correr solo en pista"], answer: "Dividir el entrenamiento en fases con objetivos específicos" },
+            { question: "¿Qué significa 'trail running'?", options: ["Correr en cinta", "Correr en pista cubierta", "Correr por senderos y montañas", "Correr en la ciudad de noche"], answer: "Correr por senderos y montañas" },
+            { question: "El 'ácido láctico' se asocia comúnmente con:", options: ["La recuperación muscular", "La sensación de energía", "La fatiga muscular durante el ejercicio intenso", "La hidratación"], answer: "La fatiga muscular durante el ejercicio intenso" },
+            { question: "¿Cuál de estas es una famosa carrera de ultramaratón en Europa?", options: ["Comrades Marathon", "Badwater Ultramarathon", "Ultra-Trail du Mont-Blanc (UTMB)", "Spartathlon"], answer: "Ultra-Trail du Mont-Blanc (UTMB)" },
+            { question: "Las zapatillas con 'placa de carbono' se han popularizado por:", options: ["Ser más baratas", "Ofrecer mayor durabilidad", "Mejorar la economía de carrera y el retorno de energía", "Ser ideales para trail"], answer: "Mejorar la economía de carrera y el retorno de energía" },
+            { question: "¿Qué es un 'negative split' en una carrera?", options: ["Terminar la carrera lesionado", "Correr la segunda mitad de la carrera más rápido que la primera", "Correr la primera mitad más rápido y luego disminuir el ritmo", "No terminar la carrera"], answer: "Correr la segunda mitad de la carrera más rápido que la primera" },
+            { question: "¿Quién fue Kathrine Switzer, en relación con la Maratón de Boston?", options: ["La primera mujer en ganarla oficialmente", "La primera mujer en correrla con dorsal, desafiando la prohibición", "La fundadora de la maratón", "Una famosa entrenadora"], answer: "La primera mujer en correrla con dorsal, desafiando la prohibición" },
+            { question: "¿Qué mide un 'pulsómetro'?", options: ["La distancia recorrida", "La velocidad", "La frecuencia cardíaca", "La cadencia"], answer: "La frecuencia cardíaca" },
+            { question: "Un 'calentamiento' adecuado antes de correr ayuda principalmente a:", options: ["Aumentar la fatiga rápidamente", "Preparar el cuerpo para el esfuerzo y reducir riesgo de lesiones", "Consumir todas las reservas de energía", "Relajar completamente los músculos"], answer: "Preparar el cuerpo para el esfuerzo y reducir riesgo de lesiones" },
+            { question: "¿Qué es el 'síndrome de la banda iliotibial'?", options: ["Un tipo de calambre", "Una lesión común en corredores, causando dolor en el exterior de la rodilla", "Una técnica de respiración", "Un estiramiento específico"], answer: "Una lesión común en corredores, causando dolor en el exterior de la rodilla" },
+            { question: "La 'hidratación con electrolitos' es especialmente importante para:", options: ["Carreras muy cortas (menos de 30 min)", "Carreras largas y/o en climas cálidos", "Correr en climas fríos", "Correr en cinta"], answer: "Carreras largas y/o en climas cálidos" },
+            { question: "¿Qué es una 'carrera de recuperación'?", options: ["Una carrera a máxima velocidad para recuperarse de una lesión", "Una carrera muy suave y corta después de un entrenamiento intenso o carrera", "No correr durante varios días", "Una carrera con muchos obstáculos"], answer: "Una carrera muy suave y corta después de un entrenamiento intenso o carrera" },
+            { question: "El 'barefoot running' o correr descalzo, ¿qué busca principalmente?", options: ["Mayor amortiguación", "Una conexión más natural con el terreno y fortalecer el pie", "Correr más rápido en todas las superficies", "Evitar ampollas"], answer: "Una conexión más natural con el terreno y fortalecer el pie" },
+            { question: "¿Qué significa 'DNF' en los resultados de una carrera?", options: ["Did Not Finish (No terminó)", "Definitely Not Fast (Definitivamente no rápido)", "Dream Now Fulfilled (Sueño ahora cumplido)", "Distance Nearly Finished (Distancia casi terminada)"], answer: "Did Not Finish (No terminó)" },
+            { question: "La 'Maratón de los Sables' (Marathon des Sables) es conocida por ser:", options: ["Una maratón nocturna en una ciudad europea", "Una ultramaratón por etapas en el desierto del Sahara", "La maratón más fría del mundo", "Una carrera vertical subiendo un rascacielos"], answer: "Una ultramaratón por etapas en el desierto del Sahara" },
+            { question: "¿Qué es la 'fascitis plantar'?", options: ["Una inflamación en la planta del pie, cerca del talón", "Un tipo de calzado deportivo", "Una técnica de masaje", "Un ejercicio de calentamiento"], answer: "Una inflamación en la planta del pie, cerca del talón" },
+            { question: "¿Cuál es el objetivo principal del 'tapering' antes de una carrera importante?", options: ["Aumentar la carga de entrenamiento al máximo", "Reducir el volumen de entrenamiento para llegar descansado y con energía a la carrera", "Probar nuevo equipamiento", "Realizar solo entrenamientos de velocidad"], answer: "Reducir el volumen de entrenamiento para llegar descansado y con energía a la carrera" },
+
+            // --- Nuevas Preguntas (Bloque 2: 20 preguntas) ---
+            { question: "¿Qué país es reconocido por su dominio en carreras de fondo y maratón?", options: ["Jamaica", "Estados Unidos", "Kenia", "Australia"], answer: "Kenia" },
+            { question: "El 'entrenamiento cruzado' (cross-training) para corredores puede incluir actividades como:", options: ["Solo correr más kilómetros", "Natación, ciclismo o elíptica", "Levantamiento de pesas extremo", "Descanso absoluto"], answer: "Natación, ciclismo o elíptica" },
+            { question: "¿Cuál es la principal fuente de energía durante una maratón para un corredor bien entrenado?", options: ["Proteínas", "Grasas y carbohidratos", "Vitaminas", "Solo agua"], answer: "Grasas y carbohidratos" },
+            { question: "La 'regla del 10%' en el aumento del kilometraje semanal sugiere:", options: ["Aumentar el kilometraje un 10% cada día", "No aumentar el kilometraje semanal más de un 10% para evitar lesiones", "Correr el 10% de tu carrera objetivo cada semana", "Descansar el 10% del tiempo que entrenas"], answer: "No aumentar el kilometraje semanal más de un 10% para evitar lesiones" },
+            { question: "¿Qué corredor es conocido como 'La Locomotora Humana'?", options: ["Paavo Nurmi", "Haile Gebrselassie", "Emil Zátopek", "Jesse Owens"], answer: "Emil Zátopek" },
+            { question: "Una 'carrera de progresión' implica:", options: ["Empezar rápido y terminar lento", "Mantener el mismo ritmo todo el tiempo", "Empezar lento e ir aumentando el ritmo gradualmente", "Correr solo en subida"], answer: "Empezar lento e ir aumentando el ritmo gradualmente" },
+            { question: "¿Qué es el 'glucógeno muscular'?", options: ["Un tipo de grasa almacenada", "La forma en que se almacenan los carbohidratos en los músculos y el hígado", "Una proteína para la contracción muscular", "Un mineral esencial para correr"], answer: "La forma en que se almacenan los carbohidratos en los músculos y el hígado" },
+            { question: "¿Cuál de estos elementos es crucial llevar en una carrera de trail running larga y autosuficiente?", options: ["Solo un reloj GPS", "Mochila de hidratación, comida, mapa, cortavientos", "Zapatillas de asfalto", "Música a todo volumen"], answer: "Mochila de hidratación, comida, mapa, cortavientos" },
+            { question: "El 'umbral anaeróbico' es un indicador de:", options: ["El punto en que dejas de sudar", "La intensidad de ejercicio a partir de la cual el lactato se acumula más rápido de lo que se elimina", "El ritmo más lento que puedes correr", "La capacidad de correr sin oxígeno"], answer: "La intensidad de ejercicio a partir de la cual el lactato se acumula más rápido de lo que se elimina" },
+            { question: "¿Qué es la 'supinación' excesiva en la pisada?", options: ["Cuando el pie rota demasiado hacia adentro", "Cuando el pie no rota lo suficiente hacia adentro y el peso cae en el borde externo", "Correr de puntillas", "Correr con el talón"], answer: "Cuando el pie no rota lo suficiente hacia adentro y el peso cae en el borde externo" },
+            { question: "¿Cuál es la distancia de una 'milla'?", options: ["1.500 metros", "1.609,34 metros", "2.000 metros", "1.000 metros"], answer: "1.609,34 metros" },
+            { question: "La 'economía de carrera' se refiere a:", options: ["Cuánto dinero gastas en zapatillas", "La cantidad de oxígeno consumido a una velocidad dada", "Correr ahorrando energía para el final", "El presupuesto para participar en carreras"], answer: "La cantidad de oxígeno consumido a una velocidad dada" },
+            { question: "El 'RICE' (Reposo, Hielo, Compresión, Elevación) es un tratamiento común para:", options: ["Mejorar la velocidad", "Lesiones agudas como esguinces o torceduras", "Aumentar la resistencia", "Prevenir la fatiga"], answer: "Lesiones agudas como esguinces o torceduras" },
+            { question: "¿Qué son los 'geles energéticos'?", options: ["Bebidas isotónicas congeladas", "Suplementos de proteína para después de correr", "Concentrados de carbohidratos de rápida absorción para tomar durante el ejercicio", "Analgésicos para el dolor muscular"], answer: "Concentrados de carbohidratos de rápida absorción para tomar durante el ejercicio" },
+            { question: "La 'Maratón de Nueva York' se caracteriza por:", options: ["Ser la más plana del mundo", "Cruzar los cinco distritos (boroughs) de la ciudad", "Ser la más antigua", "Realizarse exclusivamente de noche"], answer: "Cruzar los cinco distritos (boroughs) de la ciudad" },
+            { question: "Un 'entrenamiento de cuestas' (hill repeats) ayuda a mejorar principalmente:", options: ["La velocidad en llano", "La fuerza, potencia y eficiencia de carrera", "La flexibilidad", "La recuperación"], answer: "La fuerza, potencia y eficiencia de carrera" },
+            { question: "¿Qué es el 'chip time' o 'tiempo neto' en una carrera?", options: ["El tiempo desde el disparo de salida hasta que cruzas la meta", "El tiempo que tardas en atarte los cordones", "El tiempo oficial que aparece en el diploma", "El tiempo desde que cruzas la línea de salida hasta que cruzas la línea de meta"], answer: "El tiempo desde que cruzas la línea de salida hasta que cruzas la línea de meta" },
+            { question: "¿Cuál de estos corredores rompió la barrera de las 2 horas en maratón en condiciones no oficiales?", options: ["Kenenisa Bekele", "Haile Gebrselassie", "Eliud Kipchoge", "Mo Farah"], answer: "Eliud Kipchoge" },
+            { question: "La 'ropa técnica' para correr está diseñada principalmente para:", options: ["Ser muy abrigada en cualquier clima", "Gestionar la humedad (sudor) y ser ligera y cómoda", "Ser de algodón 100%", "Ser muy ajustada para mejorar la aerodinámica"], answer: "Gestionar la humedad (sudor) y ser ligera y cómoda" },
+            { question: "¿Qué es un 'ultramaratón'?", options: ["Cualquier carrera más corta que una maratón", "Cualquier carrera más larga que una maratón (42.195 km)", "Una carrera de exactamente 50 km", "Una maratón en montaña"], answer: "Cualquier carrera más larga que una maratón (42.195 km)" },
+
+            // --- Nuevas Preguntas (Bloque 3: 20 preguntas) ---
+            { question: "¿Quién es considerado el 'padre' de la maratón moderna, inspirado en la leyenda de Filípides?", options: ["Pierre de Coubertin", "Michel Bréal", "Spiridon Louis", "Barón Pierre de Coubertin"], answer: "Michel Bréal" }, // Michel Bréal propuso la carrera, Coubertin la incluyó en los JJOO.
+            { question: "La 'termorregulación' es el proceso por el cual el cuerpo:", options: ["Genera energía", "Mantiene su temperatura interna estable", "Absorbe nutrientes", "Repara tejidos"], answer: "Mantiene su temperatura interna estable" },
+            { question: "¿Qué es el 'core' en el contexto del entrenamiento físico para corredores?", options: ["Los músculos de las piernas", "Los músculos abdominales, lumbares, de la pelvis, glúteos y la musculatura profunda de la columna", "Los músculos de los brazos", "El corazón"], answer: "Los músculos abdominales, lumbares, de la pelvis, glúteos y la musculatura profunda de la columna" },
+            { question: "¿Cuál es la principal diferencia entre correr en cinta y correr al aire libre?", options: ["No hay diferencia", "La cinta impulsa ligeramente y no hay resistencia del viento", "Correr en cinta siempre es más difícil", "Solo se puede correr rápido en cinta"], answer: "La cinta impulsa ligeramente y no hay resistencia del viento" },
+            { question: "La 'hidratación previa' a una carrera larga consiste en:", options: ["Beber mucha agua justo antes de empezar", "Asegurar una buena hidratación en los días y horas previas", "No beber nada para evitar ir al baño", "Tomar solo bebidas azucaradas"], answer: "Asegurar una buena hidratación en los días y horas previas" },
+            { question: "¿Qué significa 'correr a ritmo conversacional'?", options: ["Correr tan rápido que no puedes hablar", "Un ritmo suave que te permite mantener una conversación sin dificultad", "Correr mientras hablas por teléfono", "Un ritmo de competición"], answer: "Un ritmo suave que te permite mantener una conversación sin dificultad" },
+            { question: "La 'Spartathlon' es una ultramaratón que recrea el viaje de:", options: ["Un soldado romano", "Filípides de Atenas a Esparta", "Un peregrino medieval", "Un explorador polar"], answer: "Filípides de Atenas a Esparta" },
+            { question: "¿Qué son las 'perlas de sal' o 'cápsulas de electrolitos'?", options: ["Dulces para dar energía", "Suplementos para reponer sales minerales perdidas por el sudor", "Medicamentos para el dolor", "Vitaminas para los huesos"], answer: "Suplementos para reponer sales minerales perdidas por el sudor" },
+            { question: "El 'efecto dorsal' se refiere a:", options: ["El dolor de espalda por correr", "La motivación extra que sienten algunos corredores al ponerse un dorsal y estar en un evento", "El peso del dorsal", "Un tipo de lesión"], answer: "La motivación extra que sienten algunos corredores al ponerse un dorsal y estar en un evento" },
+            { question: "¿Cuál fue la primera mujer en ganar la medalla de oro en la maratón olímpica femenina?", options: ["Grete Waitz", "Rosa Mota", "Joan Benoit Samuelson", "Tegla Loroupe"], answer: "Joan Benoit Samuelson" }, // Los Ángeles 1984
+            { question: "Un 'foam roller' se utiliza principalmente para:", options: ["Aumentar la velocidad", "Auto-masaje y liberación miofascial", "Medir la grasa corporal", "Enfriar los músculos"], answer: "Auto-masaje y liberación miofascial" },
+            { question: "¿Qué es la 'supercompensación' en el entrenamiento?", options: ["Entrenar en exceso hasta lesionarse", "El proceso por el cual el cuerpo se adapta y se vuelve más fuerte después de un estímulo de entrenamiento y un adecuado descanso", "Compensar un mal entrenamiento con uno muy duro", "Tomar muchos suplementos"], answer: "El proceso por el cual el cuerpo se adapta y se vuelve más fuerte después de un estímulo de entrenamiento y un adecuado descanso" },
+            { question: "La 'Zegama-Aizkorri' es una maratón de montaña famosa por:", options: ["Ser completamente plana", "Su dureza y el ambiente festivo en el País Vasco, España", "Ser la más larga del mundo", "Correrse sobre nieve"], answer: "Su dureza y el ambiente festivo en el País Vasco, España" },
+            { question: "¿Qué es la 'hiponatremia' en corredores?", options: ["Niveles altos de sodio en sangre", "Niveles peligrosamente bajos de sodio en sangre, a menudo por beber demasiada agua sin electrolitos", "Deshidratación severa", "Un golpe de calor"], answer: "Niveles peligrosamente bajos de sodio en sangre, a menudo por beber demasiada agua sin electrolitos" },
+            { question: "El 'entrenamiento polarizado' se caracteriza por:", options: ["Entrenar siempre a intensidad moderada", "Combinar mucho entrenamiento de baja intensidad con una pequeña parte de alta intensidad, evitando el moderado", "Entrenar solo en climas fríos", "Correr solo en una dirección"], answer: "Combinar mucho entrenamiento de baja intensidad con una pequeña parte de alta intensidad, evitando el moderado" },
+            { question: "¿Qué significa 'LSD' en el contexto del running?", options: ["Un tipo de droga", "Long Slow Distance (Larga Distancia Lenta)", "Light Speed Drill (Ejercicio de Velocidad Ligera)", "Last Sprint Dash (Último Sprint)"], answer: "Long Slow Distance (Larga Distancia Lenta)" },
+            { question: "La 'Comrades Marathon' en Sudáfrica es conocida por ser:", options: ["Una maratón de montaña corta", "La ultramaratón más grande y antigua del mundo (aproximadamente 90km)", "Una carrera de 10km muy rápida", "Una carrera de relevos"], answer: "La ultramaratón más grande y antigua del mundo (aproximadamente 90km)" },
+            { question: "¿Qué es un 'corta-vientos' (windbreaker) en la indumentaria de un corredor?", options: ["Una camiseta de algodón gruesa", "Una chaqueta ligera diseñada para proteger del viento y lluvia fina", "Un pantalón térmico", "Un sombrero para el sol"], answer: "Una chaqueta ligera diseñada para proteger del viento y lluvia fina" },
+            { question: "La 'propiocepción' es la capacidad del cuerpo de:", options: ["Sudar eficientemente", "Sentir la posición y movimiento de las partes del cuerpo en el espacio", "Respirar profundamente", "Digestionar carbohidratos"], answer: "Sentir la posición y movimiento de las partes del cuerpo en el espacio" },
+            { question: "¿Qué corredor popularizó la frase 'Pre' (Steve Prefontaine)?", options: ["Bill Bowerman", "Frank Shorter", "Steve Prefontaine", "Alberto Salazar"], answer: "Steve Prefontaine" },
+
+            // --- Nuevas Preguntas (Bloque 4: 20 preguntas) ---
+            { question: "¿Cuál es el propósito de las 'carreras de descarga' o 'semanas de descarga'?", options: ["Correr lo más rápido posible", "Reducir temporalmente el volumen y/o intensidad del entrenamiento para permitir la recuperación y adaptación", "Probar nuevos suplementos", "Aumentar el kilometraje bruscamente"], answer: "Reducir temporalmente el volumen y/o intensidad del entrenamiento para permitir la recuperación y adaptación" },
+            { question: "La 'biomecánica de la carrera' estudia:", options: ["La historia de las carreras", "Las fuerzas y movimientos del cuerpo humano al correr", "La nutrición para corredores", "El clima ideal para correr"], answer: "Las fuerzas y movimientos del cuerpo humano al correr" },
+            { question: "¿Qué es el 'overstriding'?", options: ["Dar pasos demasiado cortos", "Dar una zancada demasiado larga, aterrizando con el pie muy por delante del centro de gravedad", "Correr más de lo planeado", "Saltar obstáculos"], answer: "Dar una zancada demasiado larga, aterrizando con el pie muy por delante del centro de gravedad" },
+            { question: "La 'Maratón de Berlín' es famosa por:", options: ["Ser muy montañosa", "Ser un circuito muy rápido donde se han batido múltiples récords mundiales", "Tener muchos giros cerrados", "Ser la más calurosa"], answer: "Ser un circuito muy rápido donde se han batido múltiples récords mundiales" },
+            { question: "¿Qué es un 'plato de pasta' (pasta party) antes de una maratón?", options: ["Una fiesta donde solo se come pasta", "Una comida rica en carbohidratos, tradicionalmente la noche antes de una maratón, para cargar glucógeno", "Un tipo de entrenamiento", "Una marca de zapatillas"], answer: "Una comida rica en carbohidratos, tradicionalmente la noche antes de una maratón, para cargar glucógeno" },
+            { question: "El 'entrenamiento en altitud' busca:", options: ["Disfrutar de las vistas", "Aumentar la producción de glóbulos rojos para mejorar el transporte de oxígeno cuando se vuelve a nivel del mar", "Correr más lento", "Evitar el calor"], answer: "Aumentar la producción de glóbulos rojos para mejorar el transporte de oxígeno cuando se vuelve a nivel del mar" },
+            { question: "¿Qué son las 'agujetas' o DOMS (Delayed Onset Muscle Soreness)?", options: ["Una lesión grave", "El dolor muscular que aparece 24-72 horas después de un ejercicio intenso o no acostumbrado", "Un signo de deshidratación", "Un tipo de calambre"], answer: "El dolor muscular que aparece 24-72 horas después de un ejercicio intenso o no acostumbrado" },
+            { question: "¿Cuál es la función de la 'manta térmica' que se da a los corredores al finalizar una maratón fría?", options: ["Es un trofeo", "Ayudar a mantener el calor corporal y prevenir la hipotermia", "Secar el sudor", "Proteger del sol"], answer: "Ayudar a mantener el calor corporal y prevenir la hipotermia" },
+            { question: "La 'Badwater Ultramarathon' es conocida por sus condiciones extremas de:", options: ["Frío polar", "Altitud extrema en el Himalaya", "Calor extremo en el Valle de la Muerte, California", "Humedad y jungla"], answer: "Calor extremo en el Valle de la Muerte, California" },
+            { question: "¿Qué es el 'factor de protección solar' (FPS) y por qué es importante para corredores?", options: ["Un tipo de vitamina", "Indica la capacidad de un protector solar para bloquear los rayos UV, crucial para proteger la piel durante la exposición al sol", "Una medida de la dureza del terreno", "Un índice de contaminación del aire"], answer: "Indica la capacidad de un protector solar para bloquear los rayos UV, crucial para proteger la piel durante la exposición al sol" },
+            { question: "La 'carrera continua' es un tipo de entrenamiento que consiste en:", options: ["Correr a intervalos de alta intensidad", "Correr a un ritmo constante y moderado durante un tiempo prolongado", "Hacer sprints cortos", "Correr solo en cuestas"], answer: "Correr a un ritmo constante y moderado durante un tiempo prolongado" },
+            { question: "¿Qué es una 'ampolla' y cómo se forma comúnmente al correr?", options: ["Un tipo de medalla", "Una acumulación de líquido bajo la piel causada por fricción o roce, usualmente de las zapatillas o calcetines", "Un desgarro muscular", "Un hueso roto"], answer: "Una acumulación de líquido bajo la piel causada por fricción o roce, usualmente de las zapatillas o calcetines" },
+            { question: "El 'Kilómetro Vertical' es una modalidad de carrera que consiste en:", options: ["Correr 1km en llano lo más rápido posible", "Subir 1.000 metros de desnivel positivo en la menor distancia posible (generalmente menos de 5km)", "Correr 1km cuesta abajo", "Nadar 1km y luego correr"], answer: "Subir 1.000 metros de desnivel positivo en la menor distancia posible (generalmente menos de 5km)" },
+            { question: "¿Qué significa el acrónimo 'GPS' en los relojes deportivos?", options: ["Great Pace System (Gran Sistema de Ritmo)", "Global Positioning System (Sistema de Posicionamiento Global)", "Go Persist Sprint (Ve, Persiste, Esprinta)", "General Performance Score (Puntuación General de Rendimiento)"], answer: "Global Positioning System (Sistema de Posicionamiento Global)" },
+            { question: "¿Cuál es la importancia del 'sueño' para la recuperación de un corredor?", options: ["No es importante, se puede rendir igual durmiendo poco", "Es fundamental para la reparación muscular, la regulación hormonal y la consolidación del entrenamiento", "Solo importa la noche antes de la carrera", "Dormir mucho causa pereza"], answer: "Es fundamental para la reparación muscular, la regulación hormonal y la consolidación del entrenamiento" },
+            { question: "La 'Maratón de las Arenas' es otro nombre para:", options: ["Maratón de Boston", "Marathon des Sables", "Maratón de Nueva York", "Maratón de Chicago"], answer: "Marathon des Sables" },
+            { question: "¿Qué es la 'crioterapia' o baños de hielo para corredores?", options: ["Beber agua muy fría", "La inmersión en agua fría para reducir la inflamación y acelerar la recuperación muscular", "Un tipo de estiramiento en frío", "Correr en la nieve"], answer: "La inmersión en agua fría para reducir la inflamación y acelerar la recuperación muscular" },
+            { question: "¿Qué atleta femenina es conocida por sus múltiples victorias en maratones importantes y su longevidad en el deporte?", options: ["Paula Radcliffe", "Tirunesh Dibaba", "Mary Keitany", "Joan Benoit Samuelson"], answer: "Paula Radcliffe" }, // Mary Keitany también es buena opción, pero Radcliffe tiene el récord mundial por mucho tiempo.
+            { question: "El 'índice glucémico' de un alimento indica:", options: ["Su contenido de grasa", "La rapidez con que eleva los niveles de azúcar en sangre", "Su contenido de proteínas", "Su cantidad de calorías"], answer: "La rapidez con que eleva los niveles de azúcar en sangre" },
+            { question: "¿Qué es un 'avituallamiento' en una carrera?", options: ["El punto de partida", "Un puesto donde los corredores pueden obtener agua, bebidas isotónicas, comida, etc.", "La zona de masajes post-carrera", "El guardarropa"], answer: "Un puesto donde los corredores pueden obtener agua, bebidas isotónicas, comida, etc." },
+            
+            // --- Nuevas Preguntas (Bloque 5: 20 preguntas) ---
+            { question: "¿Qué es el 'efecto Coriolis' en relación a correr en una pista de atletismo?", options: ["Una ayuda para correr más rápido en las curvas", "Una fuerza ficticia que afecta ligeramente a los corredores en las curvas, más notable en distancias largas", "El nombre del material de la pista", "Una técnica de adelantamiento"], answer: "Una fuerza ficticia que afecta ligeramente a los corredores en las curvas, más notable en distancias largas" },
+            { question: "¿Cuál es la principal función de los calcetines técnicos para correr?", options: ["Solo estética", "Prevenir ampollas, gestionar la humedad y ofrecer comodidad", "Dar calor extremo", "Aumentar la velocidad"], answer: "Prevenir ampollas, gestionar la humedad y ofrecer comodidad" },
+            { question: "La 'leyenda de Filípides' está asociada con el origen de qué carrera:", options: ["100 metros lisos", "Media Maratón", "Maratón", "Salto de longitud"], answer: "Maratón" },
+            { question: "¿Qué es el 'síndrome del piramidal'?", options: ["Una alegría por correr", "Un dolor en la región glútea que puede irradiar por la pierna, causado por la compresión del nervio ciático por el músculo piramidal", "Un tipo de calzado", "Una dieta para corredores"], answer: "Un dolor en la región glútea que puede irradiar por la pierna, causado por la compresión del nervio ciático por el músculo piramidal" },
+            { question: "El 'Cooper Test' consiste en correr la máxima distancia posible en:", options: ["5 minutos", "12 minutos", "30 minutos", "1 hora"], answer: "12 minutos" },
+            { question: "¿Qué es un 'cortado' en el contexto de una carrera (especialmente maratón)?", options: ["Un café antes de correr", "Un corredor que no puede mantener el ritmo del grupo y se queda atrás", "Atajar el recorrido", "Un tipo de lesión"], answer: "Un corredor que no puede mantener el ritmo del grupo y se queda atrás" },
+            { question: "La 'Maratón de Valencia' ha ganado popularidad recientemente por:", options: ["Ser la más antigua de España", "Sus circuitos rápidos y buena organización, logrando grandes marcas", "Ser exclusivamente nocturna", "Tener el mayor número de participantes del mundo"], answer: "Sus circuitos rápidos y buena organización, logrando grandes marcas" },
+            { question: "¿Qué es la 'termogénesis'?", options: ["El estudio de los termos", "La producción de calor en el cuerpo", "Un tipo de calzado para climas fríos", "Una bebida energética"], answer: "La producción de calor en el cuerpo" },
+            { question: "El 'entrenamiento invisible' se refiere a:", options: ["Correr de noche sin luces", "Aspectos como la nutrición, el descanso, la hidratación y la recuperación, que son cruciales pero no son el acto de correr en sí", "Un tipo de meditación", "Entrenar sin que nadie te vea"], answer: "Aspectos como la nutrición, el descanso, la hidratación y la recuperación, que son cruciales pero no son el acto de correr en sí" },
+            { question: "¿Quién fue Abebe Bikila?", options: ["Un famoso entrenador de спринт", "Un corredor etíope que ganó la maratón olímpica de Roma 1960 corriendo descalzo", "El inventor de las zapatillas de clavos", "Un comentarista deportivo"], answer: "Un corredor etíope que ganó la maratón olímpica de Roma 1960 corriendo descalzo" },
+            { question: "¿Qué es el 'glide' en la técnica de carrera?", options: ["Deslizarse sobre hielo", "La fase de vuelo o suspensión en la que ambos pies están en el aire", "Un tipo de estiramiento", "Una marca de ropa deportiva"], answer: "La fase de vuelo o suspensión en la que ambos pies están en el aire" },
+            { question: "La 'periodontitis del corredor' es un término a veces usado para referirse a:", options: ["Problemas dentales por el consumo de geles y bebidas azucaradas y sequedad bucal", "Dolor en el periostio tibial", "Una enfermedad de las encías exclusiva de corredores", "Un tipo de calzado"], answer: "Problemas dentales por el consumo de geles y bebidas azucaradas y sequedad bucal" },
+            { question: "¿Cuál es la distancia estándar de una vuelta a una pista de atletismo olímpica por el carril interior?", options: ["200 metros", "400 metros", "800 metros", "100 metros"], answer: "400 metros" },
+            { question: "Un 'chaleco de hidratación' es más comúnmente usado en:", options: ["Carreras de 5km", "Entrenamientos en cinta", "Trail running y ultramaratones", "Sprints"], answer: "Trail running y ultramaratones" },
+            { question: "La 'Mount Fuji Marathon' es una carrera escénica en qué país:", options: ["China", "Corea del Sur", "Japón", "Nepal"], answer: "Japón" },
+            { question: "¿Qué es el 'bronceado de corredor' (runner's tan)?", options: ["Un producto para broncearse rápido", "Las marcas de bronceado características por la ropa de correr (camiseta de tirantes, pantalón corto, calcetines, reloj)", "Un tipo de lesión por el sol", "Un color específico de ropa"], answer: "Las marcas de bronceado características por la ropa de correr (camiseta de tirantes, pantalón corto, calcetines, reloj)" },
+            { question: "El 'ácido úrico' elevado puede ser un problema para algunos corredores, relacionado con:", options: ["Falta de velocidad", "Dieta, hidratación y a veces predisposición genética, pudiendo causar gota", "Exceso de flexibilidad", "Correr demasiado lento"], answer: "Dieta, hidratación y a veces predisposición genética, pudiendo causar gota" },
+            { question: "¿Qué significa 'track and field'?", options: ["Correr por el campo y rastrear animales", "Atletismo (pruebas de pista y campo)", "Un tipo de videojuego", "Una marca de zapatillas"], answer: "Atletismo (pruebas de pista y campo)" },
+            { question: "La 'respiración diafragmática' o abdominal en corredores ayuda a:", options: ["Cansarse más rápido", "Una mayor captación de oxígeno y relajación", "Aumentar el ritmo cardíaco", "Contener la respiración por más tiempo"], answer: "Una mayor captación de oxígeno y relajación" },
+            { question: "¿Qué es el 'Kilimanjaro Marathon'?", options: ["Una carrera en la cima del Kilimanjaro", "Una maratón que se corre en las faldas del Monte Kilimanjaro, Tanzania", "Una carrera virtual", "Una carrera de obstáculos"], answer: "Una maratón que se corre en las faldas del Monte Kilimanjaro, Tanzania" }
+        ];
+
+
+        // --- Estado del Juego ---
+        let currentQuestionIndex = 0;
+        let score = 0;
+        let shuffledQuestions = [];
+
+        // --- Funciones del Juego ---
+
+        function shuffleArray(array) {
+            const newArray = array.slice();
+            for (let i = newArray.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+            }
+            return newArray;
+        }
+
+        function updateProgressBar() {
+            const progressPercentage = (currentQuestionIndex / shuffledQuestions.length) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+        }
+
+        function startGame() {
+            startScreen.classList.add('hidden');
+            gameScreen.classList.remove('hidden');
+            endScreen.classList.add('hidden');
+
+            currentQuestionIndex = 0;
+            score = 0;
+            scoreEl.textContent = score;
+            shuffledQuestions = shuffleArray(questions);
+            totalQuestionsEl.textContent = shuffledQuestions.length;
+            nextQuestionButton.classList.add('hidden');
+            feedbackMessageEl.textContent = '';
+            updateProgressBar();
+            loadQuestion();
+        }
+
+        function loadQuestion() {
+            if (currentQuestionIndex < shuffledQuestions.length) {
+                const currentQuestion = shuffledQuestions[currentQuestionIndex];
+                questionNumberEl.textContent = currentQuestionIndex + 1;
+                questionTextEl.textContent = currentQuestion.question;
+                optionsContainer.innerHTML = ''; 
+
+                const shuffledOptions = shuffleArray(currentQuestion.options);
+
+                shuffledOptions.forEach(option => {
+                    const button = document.createElement('button');
+                    button.textContent = option;
+                    button.classList.add('option-button', 'w-full', 'bg-white', 'hover:bg-sky-100', 'text-sky-700', 'text-sm', 'sm:text-base', 'font-medium', 'py-3', 'px-4', 'rounded-lg', 'border-2', 'border-sky-300', 'focus:outline-none', 'focus:ring-2', 'focus:ring-sky-500', 'text-left');
+                    button.addEventListener('click', () => selectAnswer(button, option, currentQuestion.answer));
+                    optionsContainer.appendChild(button);
+                });
+                feedbackMessageEl.textContent = '';
+                nextQuestionButton.classList.add('hidden');
+                updateProgressBar(); // Actualizar barra al cargar nueva pregunta
+            } else {
+                progressBar.style.width = `100%`; // Asegurar que la barra llegue al final
+                endGame();
+            }
+        }
+
+        function selectAnswer(buttonEl, selectedOption, correctAnswer) {
+            Array.from(optionsContainer.children).forEach(button => {
+                button.disabled = true;
+                if (button.textContent === correctAnswer) {
+                    button.classList.add('correct');
+                } else if (button.textContent === selectedOption) {
+                    button.classList.add('incorrect');
+                }
+                // Quitar hover effect después de seleccionar
+                button.classList.remove('hover:bg-sky-100');
+            });
+
+            if (selectedOption === correctAnswer) {
+                score++;
+                scoreEl.textContent = score;
+                feedbackMessageEl.textContent = "¡Correcto!";
+                feedbackMessageEl.classList.remove('text-red-500');
+                feedbackMessageEl.classList.add('text-emerald-500');
+            } else {
+                feedbackMessageEl.textContent = `Incorrecto. La respuesta era: ${correctAnswer}`;
+                feedbackMessageEl.classList.remove('text-emerald-500');
+                feedbackMessageEl.classList.add('text-red-500');
+            }
+            nextQuestionButton.classList.remove('hidden');
+        }
+
+        function handleNextQuestion() {
+            currentQuestionIndex++;
+            Array.from(optionsContainer.children).forEach(button => {
+                button.disabled = false;
+                button.classList.remove('correct', 'incorrect');
+                button.classList.add('hover:bg-sky-100'); // Restaurar hover
+            });
+            loadQuestion();
+        }
+
+        function getFinalMessage(finalScore, totalQuestions) {
+            const percentage = (finalScore / totalQuestions) * 100;
+            if (percentage === 100) {
+                return "¡Increíble! ¡Eres un experto en running! Todas las respuestas correctas.";
+            } else if (percentage >= 80) {
+                return "¡Excelente desempeño! Sabes muchísimo sobre running.";
+            } else if (percentage >= 60) {
+                return "¡Muy bien! Tienes buenos conocimientos sobre el tema.";
+            } else if (percentage >= 40) {
+                return "No está mal, pero hay espacio para aprender más sobre este apasionante deporte.";
+            } else {
+                return "Sigue aprendiendo y corriendo. ¡Cada día es una nueva oportunidad!";
+            }
+        }
+
+        function endGame() {
+            gameScreen.classList.add('hidden');
+            endScreen.classList.remove('hidden');
+            finalScoreEl.textContent = score;
+            finalMessageEl.textContent = getFinalMessage(score, shuffledQuestions.length);
+        }
+
+        // --- Event Listeners ---
+        startButton.addEventListener('click', startGame);
+        nextQuestionButton.addEventListener('click', handleNextQuestion);
+        restartButton.addEventListener('click', startGame);
+
+    </script>
+</body>
+</html>
+
