@@ -1,14 +1,14 @@
 [
   {
-    "question": "¿Cuál era el propósito evolutivo primordial de correr para nuestros primeros ancestros como el Australopithecus?",
+    "question": "¿Qué es lo más importante que debes hacer antes de empezar a correr para evitar dolores?",
     "options": [
-      "Competir en rituales tribales.",
-      "Migrar a través de continentes.",
-      "Escapar de depredadores y cazar presas.",
-      "Explorar nuevos territorios por curiosidad."
+      "Comer mucho.",
+      "Correr lo más rápido posible.",
+      "Hacer un calentamiento suave.",
+      "No beber agua."
     ],
     "answer": 2,
-    "ampliacion": "El texto subraya que correr no nació como deporte, sino como una \"herramienta evolutiva\" crucial...",
+    "ampliacion": "Preparar tu cuerpo con un calentamiento, como caminar o trotar despacio, ayuda a que tus músculos se activen y previene lesiones. ¡No te lo saltes! 😉",
     "difficulty": 1
   },
   {
@@ -20,7 +20,7 @@
       "La carrera a pie del \"stadion\"."
     ],
     "answer": 3,
-    "ampliacion": "En los primeros Juegos Olímpicos en Olimpia, el único evento en el programa era el \"stadion\"...",
+    "ampliacion": "En los primeros Juegos Olímpicos en Olimpia, el único evento en el programa era el \"stadion\", una carrera de velocidad de aproximadamente 192 metros.",
     "difficulty": 2
   },
   {
@@ -32,19 +32,19 @@
       "\"¡Alertad a Esparta!\""
     ],
     "answer": 1,
-    "ampliacion": "La versión romántica y popular de la historia, que inspiró la carrera de maratón moderna...",
+    "ampliacion": "La versión romántica y popular de la historia, que inspiró la carrera de maratón moderna, cuenta que el mensajero Filípides pronunció la palabra \"¡Vencimos!\" antes de desplomarse.",
     "difficulty": 1
   },
   {
     "question": "¿Cuál fue la hazaña atlética real y más prodigiosa de Filípides, según el historiador Heródoto?",
     "options": [
-      "Correr 40 km desde Maratón a Atenas...",
-      "Luchar heroicamente...",
-      "Correr casi 500 km (ida y vuelta) de Atenas a Esparta...",
-      "Organizar la marcha del ejército..."
+      "Correr 40 km desde Maratón a Atenas para anunciar la victoria.",
+      "Luchar heroicamente en la batalla de Maratón.",
+      "Correr casi 500 km (ida y vuelta) de Atenas a Esparta para pedir ayuda.",
+      "Organizar la marcha del ejército ateniense."
     ],
     "answer": 2,
-    "ampliacion": "El registro histórico más antiguo, de Heródoto, describe una proeza de ultrarresistencia mucho mayor...",
+    "ampliacion": "El registro histórico más antiguo, de Heródoto, describe una proeza de ultrarresistencia mucho mayor: Filípides corrió de Atenas a Esparta y regresó en muy poco tiempo.",
     "difficulty": 2
   },
   {
@@ -52,11 +52,11 @@
     "options": [
       "Para que coincidiera exactamente con el viaje de Filípides.",
       "Para que la carrera comenzara en el Castillo de Windsor y terminara frente al palco real.",
-      "Porque era la distancia máxima...",
-      "Para establecer un número redondo..."
+      "Porque era la distancia máxima que un humano podía correr.",
+      "Para establecer un número redondo en el sistema métrico."
     ],
     "answer": 1,
-    "ampliacion": "La distancia no tenía una base histórica precisa. Se fijó en los Juegos de Londres para acomodar a la familia real británica...",
+    "ampliacion": "La distancia no tenía una base histórica precisa. Se fijó en los Juegos de Londres para acomodar a la familia real británica, haciendo que la carrera terminara justo frente a su palco.",
     "difficulty": 2
   },
   {
@@ -68,7 +68,7 @@
       "Jim Fixx."
     ],
     "answer": 2,
-    "ampliacion": "Junto con Bill Bowerman (cofundador de Nike), el entrenador Arthur Lydiard fue una de las figuras clave...",
+    "ampliacion": "Junto con Bill Bowerman (cofundador de Nike), el entrenador Arthur Lydiard fue una de las figuras clave que popularizó el trote suave (jogging) como una actividad beneficiosa para todos.",
     "difficulty": 3
   },
   {
@@ -80,31 +80,31 @@
       "Jimmy Carter."
     ],
     "answer": 2,
-    "ampliacion": "Su triunfo, televisado a millones de personas, fue un \"momento catalizador\"...",
+    "ampliacion": "El triunfo del estadounidense Frank Shorter, televisado a millones de personas, fue un momento catalizador que inspiró a toda una generación a empezar a correr.",
     "difficulty": 1
   },
   {
-    "question": "¿Cuál de los siguientes NO fue un factor clave en la \"tormenta perfecta\" cultural del running boom de los 70?",
+    "question": "Al empezar a correr, ¿qué es mejor: correr muy rápido poco tiempo o más lento durante más tiempo?",
     "options": [
-      "La validación científica del Dr. Ken Cooper.",
-      "La invención de los relojes GPS para medir el ritmo.",
-      "El impulso comercial de empresas como Nike.",
-      "La amplificación mediática de la revista Runner's World."
+      "Correr muy rápido para acabar antes.",
+      "Correr a un ritmo suave que te permita hablar.",
+      "Alternar sprints con paradas completas.",
+      "No importa la velocidad."
     ],
     "answer": 1,
-    "ampliacion": "Los relojes GPS no estuvieron disponibles para el consumidor hasta décadas después...",
-    "difficulty": 2
+    "ampliacion": "Para empezar, es ideal mantener un \"ritmo conversacional\". Si puedes hablar mientras corres, significa que vas a una intensidad adecuada para construir tu resistencia. 🏃‍♀️💨",
+    "difficulty": 1
   },
   {
     "question": "¿Qué le ocurrió a la corredora griega Stamata Revithi en los Juegos Olímpicos de 1896?",
     "options": [
-      "Ganó la primera medalla de oro...",
-      "Se le negó la entrada al estadio...",
+      "Ganó la primera medalla de oro femenina en maratón.",
+      "Se le negó la entrada al estadio para terminar la carrera.",
       "Fundó el primer club de running femenino.",
-      "Fue descalificada..."
+      "Fue descalificada por tomar un atajo."
     ],
     "answer": 1,
-    "ampliacion": "En un primer acto de desafío en la historia del maratón femenino, a Revithi se le prohibió competir oficialmente...",
+    "ampliacion": "En un primer acto de desafío en la historia del maratón femenino, a Revithi se le prohibió competir oficialmente por ser mujer. Corrió el recorrido por su cuenta al día siguiente.",
     "difficulty": 3
   },
   {
@@ -112,23 +112,23 @@
     "options": [
       "Entregarle un trofeo especial.",
       "Descalificarla verbalmente.",
-      "Arrancarle el dorsal y expulsarla físicamente...",
+      "Arrancarle el dorsal y expulsarla físicamente de la carrera.",
       "Entrevistarla en mitad del recorrido."
     ],
     "answer": 2,
-    "ampliacion": "Las icónicas fotografías del incidente muestran a Jock Semple atacando físicamente a Switzer...",
+    "ampliacion": "Las icónicas fotografías del incidente muestran a Jock Semple atacando físicamente a Switzer para intentar expulsarla de la carrera, que en ese entonces era exclusiva para hombres.",
     "difficulty": 1
   },
   {
     "question": "¿Quién fue Bobbi Gibb?",
     "options": [
-      "La primera ganadora oficial...",
+      "La primera ganadora oficial del maratón de Boston.",
       "La mujer que corrió el maratón de Boston de forma no oficial un año antes que Switzer.",
-      "La fundadora del Avon International...",
-      "La primera mujer en correr..."
+      "La fundadora del Avon International Running Circuit.",
+      "La primera mujer en correr una ultramaratón."
     ],
     "answer": 1,
-    "ampliacion": "Aunque la historia de Switzer es más famosa..., el texto destaca que Bobbi Gibb fue la verdadera pionera en Boston...",
+    "ampliacion": "Aunque la historia de Kathrine Switzer es más famosa por el incidente con el director de carrera, Bobbi Gibb fue la verdadera pionera en Boston, corriendo sin dorsal en 1966.",
     "difficulty": 2
   },
   {
@@ -140,7 +140,7 @@
       "1992, en Barcelona."
     ],
     "answer": 2,
-    "ampliacion": "Gracias a los esfuerzos de pioneras como Kathrine Switzer..., el Comité Olímpico Internacional finalmente incluyó el maratón femenino...",
+    "ampliacion": "Gracias a los esfuerzos de pioneras como Kathrine Switzer, el Comité Olímpico Internacional finalmente incluyó el maratón femenino en los Juegos de Los Ángeles 1984.",
     "difficulty": 2
   },
   {
@@ -148,59 +148,59 @@
     "options": [
       "La falta de patrocinadores.",
       "El mito cultural de la fragilidad femenina.",
-      "La escasez de calzado deportivo...",
-      "La competencia de otros deportes..."
+      "La escasez de calzado deportivo para mujeres.",
+      "La competencia de otros deportes más populares."
     ],
     "answer": 1,
-    "ampliacion": "La lucha no era solo contra reglas discriminatorias. Cada mujer que corría una larga distancia desafiaba la percepción social...",
+    "ampliacion": "La lucha no era solo contra reglas discriminatorias. Cada mujer que corría una larga distancia desafiaba la percepción social de que las mujeres eran demasiado débiles para tales esfuerzos.",
     "difficulty": 2
   },
   {
     "question": "¿Qué mide el VO2 Máx?",
     "options": [
-      "La velocidad máxima...",
-      "La cantidad de lactato...",
-      "La cantidad máxima de oxígeno que el cuerpo puede utilizar...",
-      "La eficiencia del cuerpo para quemar grasa..."
+      "La velocidad máxima que puedes alcanzar en un sprint.",
+      "La cantidad de lactato que produces al correr.",
+      "La cantidad máxima de oxígeno que tu cuerpo puede utilizar durante el ejercicio.",
+      "La eficiencia de tu cuerpo para quemar grasa como combustible."
     ],
     "answer": 2,
-    "ampliacion": "El VO2 Máx es el indicador clave de la capacidad cardiorrespiratoria...",
+    "ampliacion": "El VO2 Máx es el indicador clave de la capacidad cardiorrespiratoria de un corredor. A mayor VO2 Máx, más oxígeno llega a los músculos para producir energía.",
     "difficulty": 1
   },
   {
     "question": "Si el VO2 Máx es el \"tamaño del motor\" de un corredor, ¿qué determina el Umbral de Lactato (UL)?",
     "options": [
-      "La eficiencia de combustible...",
-      "La durabilidad del motor...",
+      "La eficiencia de combustible que usa el motor.",
+      "La durabilidad del motor en largas distancias.",
       "A qué porcentaje de su máxima potencia puede funcionar el motor de forma sostenida.",
-      "La velocidad con la que el motor..."
+      "La velocidad con la que el motor puede arrancar."
     ],
     "answer": 2,
-    "ampliacion": "El Umbral de Lactato es el punto de intensidad en el que el lactato se acumula más rápido de lo que se elimina...",
+    "ampliacion": "El Umbral de Lactato es el punto de intensidad en el que el lactato se acumula más rápido de lo que se elimina, causando fatiga. Un umbral alto permite correr más rápido por más tiempo.",
     "difficulty": 2
   },
   {
     "question": "¿Qué es la Economía de Carrera (EC)?",
     "options": [
-      "El coste de las zapatillas...",
-      "La cantidad de carbohidratos...",
+      "El coste de las zapatillas y el equipamiento para correr.",
+      "La cantidad de carbohidratos que necesitas para una carrera.",
       "El coste fisiológico (oxígeno consumido) para correr a una velocidad submáxima.",
-      "El tiempo que un corredor..."
+      "El tiempo que un corredor puede mantener su ritmo de maratón."
     ],
     "answer": 2,
-    "ampliacion": "La EC es el factor de \"eficiencia\". Un corredor con una mejor economía necesita menos energía y oxígeno...",
+    "ampliacion": "La EC es el factor de \"eficiencia\". Un corredor con una mejor economía necesita menos energía y oxígeno para mantener un ritmo determinado, como un coche que consume menos combustible.",
     "difficulty": 2
   },
   {
-    "question": "¿Qué sistema energético es el dominante en una actividad como correr un maratón a ritmo moderado?",
+    "question": "¿Qué tipo de energía usa tu cuerpo principalmente durante una carrera larga y a ritmo suave como un maratón?",
     "options": [
-      "El sistema anaeróbico.",
-      "El sistema aeróbico.",
-      "El sistema fosfágeno.",
-      "El sistema de supercompensación."
+      "Energía explosiva para sprints.",
+      "Energía aeróbica, usando oxígeno.",
+      "Energía de acción rápida para levantar pesas.",
+      "Energía de la cafeína."
     ],
     "answer": 1,
-    "ampliacion": "El sistema aeróbico utiliza oxígeno para generar energía de forma sostenida...",
+    "ampliacion": "El sistema aeróbico es el protagonista en las carreras de resistencia. Utiliza el oxígeno que respiras para quemar grasas y carbohidratos, dándote energía por mucho tiempo. 🌬️",
     "difficulty": 1
   },
   {
@@ -212,7 +212,7 @@
       "Principio de Variedad."
     ],
     "answer": 1,
-    "ampliacion": "Para que el cuerpo se adapte y se vuelva más fuerte, la carga de entrenamiento... debe aumentarse de manera gradual...",
+    "ampliacion": "Para que el cuerpo se adapte y se vuelva más fuerte, la carga de entrenamiento (distancia, velocidad) debe aumentarse de manera gradual y planificada. ¡Poco a poco se llega lejos!",
     "difficulty": 1
   },
   {
@@ -224,19 +224,19 @@
       "Especificidad."
     ],
     "answer": 0,
-    "ampliacion": "Las adaptaciones que nos hacen más fuertes no ocurren mientras corremos, sino durante la recuperación...",
+    "ampliacion": "Las adaptaciones que nos hacen más fuertes no ocurren mientras corremos, sino durante la recuperación. El descanso es tan importante como el propio entrenamiento. 😴",
     "difficulty": 2
   },
   {
     "question": "¿Cuál es el objetivo principal de un \"Tempo Run\" o carrera a ritmo?",
     "options": [
       "Mejorar el VO2 Máx.",
-      "Aumentar la velocidad punta...",
+      "Aumentar la velocidad punta en un sprint.",
       "Mejorar el umbral de lactato.",
-      "Desarrollar la fortaleza mental..."
+      "Desarrollar la fortaleza mental para el día de la carrera."
     ],
     "answer": 2,
-    "ampliacion": "Un \"tempo run\" se realiza a un ritmo \"cómodamente duro\", justo por debajo del umbral de lactato...",
+    "ampliacion": "Un \"tempo run\" se realiza a un ritmo \"cómodamente duro\", justo por debajo del umbral de lactato. Este tipo de entrenamiento enseña al cuerpo a ser más eficiente a ritmos de carrera más rápidos.",
     "difficulty": 2
   },
   {
@@ -248,43 +248,43 @@
       "Subida de colina."
     ],
     "answer": 1,
-    "ampliacion": "A diferencia de las series estructuradas, el Fartlek es un entrenamiento no estructurado...",
+    "ampliacion": "A diferencia de las series estructuradas, el Fartlek es un entrenamiento no estructurado que consiste en alternar ritmos rápidos y lentos de forma libre, por ejemplo, corriendo rápido hasta el siguiente árbol.",
     "difficulty": 1
   },
   {
     "question": "¿A qué se refiere la cadencia en el running?",
     "options": [
-      "Al ritmo expresado...",
+      "Al ritmo expresado en minutos por kilómetro.",
       "A la longitud de la zancada.",
       "Al número de pasos que se dan por minuto.",
-      "A la inclinación del cuerpo..."
+      "A la inclinación del cuerpo hacia adelante."
     ],
     "answer": 2,
-    "ampliacion": "La cadencia es una métrica de la técnica de carrera. Una cadencia más alta (en torno a 180 ppm es una referencia)...",
+    "ampliacion": "La cadencia es una métrica de la técnica de carrera. Una cadencia más alta (en torno a 180 pasos por minuto es una referencia común) suele asociarse con una mayor eficiencia y menor impacto.",
     "difficulty": 2
   },
   {
     "question": "¿Qué es \"pegarse contra el muro\" o \"bonking\"?",
     "options": [
-      "Una lesión muscular grave...",
-      "La sensación de euforia...",
-      "El momento en que un corredor choca...",
+      "Una lesión muscular grave en la pierna.",
+      "La sensación de euforia que sienten algunos corredores.",
+      "El momento en que un corredor choca contra una pared real.",
       "Una caída brusca del rendimiento por agotar las reservas de glucógeno."
     ],
     "answer": 3,
-    "ampliacion": "Es el temido colapso en carreras de larga distancia. Ocurre cuando el cuerpo agota su combustible principal (glucógeno muscular)...",
+    "ampliacion": "Es el temido colapso en carreras de larga distancia. Ocurre cuando el cuerpo agota su combustible principal (glucógeno muscular) y tiene que empezar a quemar grasa de forma menos eficiente.",
     "difficulty": 1
   },
   {
     "question": "¿Cuál es la diferencia entre el \"tiempo de pistola\" y el \"tiempo de chip\"?",
     "options": [
-      "El tiempo de pistola es oficial...",
+      "El tiempo de pistola es para aficionados y el de chip para profesionales.",
       "El tiempo de pistola empieza con el disparo y el de chip cuando el corredor cruza la línea de salida.",
-      "El tiempo de chip solo se usa...",
-      "El tiempo de pistola mide en segundos..."
+      "El tiempo de chip solo se usa en carreras cortas.",
+      "No hay ninguna diferencia, son lo mismo."
     ],
     "answer": 1,
-    "ampliacion": "En carreras masivas, pueden pasar varios minutos desde el pistoletazo de salida (tiempo de pistola) hasta que un corredor cruza la línea de salida...",
+    "ampliacion": "En carreras masivas, pueden pasar varios minutos desde el pistoletazo de salida (tiempo de pistola) hasta que un corredor cruza la línea de salida. El chip registra tu tiempo personal real.",
     "difficulty": 1
   },
   {
@@ -296,32 +296,32 @@
       "Fascitis Plantar."
     ],
     "answer": 3,
-    "ampliacion": "Es una de las lesiones más comunes. El dolor agudo en la planta del pie al dar los primeros pasos del día es su síntoma más característico...",
+    "ampliacion": "Es una de las lesiones más comunes. El dolor agudo en la planta del pie al dar los primeros pasos del día es su síntoma más característico. Se debe a la inflamación de la fascia plantar.",
     "difficulty": 2
   },
   {
-    "question": "¿Qué práctica de prevención de lesiones es cuestionada por un estudio que encontró un 30% más de lesiones en quienes la realizaban?",
+    "question": "Si sientes un dolor agudo mientras corres, ¿qué deberías hacer?",
     "options": [
-      "El entrenamiento de fuerza.",
-      "El estiramiento regular.",
-      "El uso de plantillas...",
-      "Correr en superficies blandas."
+      "Ignorarlo y seguir corriendo más rápido.",
+      "Parar, descansar y evaluar la molestia.",
+      "Estirar el músculo adolorido con fuerza.",
+      "Seguir corriendo pero más despacio."
     ],
     "answer": 1,
-    "ampliacion": "El texto cita un estudio que desafía la creencia popular sobre el estiramiento...",
-    "difficulty": 3
+    "ampliacion": "Escuchar a tu cuerpo es fundamental. Un dolor agudo es una señal de alarma. Lo más prudente es detenerse para no agravar una posible lesión. 🛑",
+    "difficulty": 1
   },
   {
-    "question": "Según un estudio de la Universidad de Berna, los corredores que usaban zapatillas más caras tenían...",
+    "question": "¿Es verdad que las zapatillas más caras siempre previenen más lesiones?",
     "options": [
-      "Un 50% menos de probabilidades...",
-      "Ninguna diferencia en el riesgo...",
-      "Un 123% más de probabilidades de lesionarse.",
-      "Lesiones menos graves..."
+      "Sí, a mayor precio, mayor protección.",
+      "No necesariamente, la comodidad y el ajuste son más importantes.",
+      "Solo las zapatillas de más de 200€ son seguras.",
+      "El precio no tiene nada que ver con las lesiones."
     ],
-    "answer": 2,
-    "ampliacion": "Este dato sorprendente sugiere que la tecnología y el precio del calzado no garantizan una menor tasa de lesiones...",
-    "difficulty": 3
+    "answer": 1,
+    "ampliacion": "No hay evidencia de que las zapatillas más caras protejan más. Lo crucial es encontrar un calzado que te resulte cómodo y se adapte bien a tu pie y tu forma de correr. 💸≠🤕",
+    "difficulty": 1
   },
   {
     "question": "¿Cuál de los siguientes maratones es el más joven de los seis Majors originales?",
@@ -332,7 +332,7 @@
       "Londres."
     ],
     "answer": 2,
-    "ampliacion": "Celebrado por primera vez en 2007, el Maratón de Tokio es el más reciente en unirse al grupo original...",
+    "ampliacion": "Celebrado por primera vez en 2007, el Maratón de Tokio es el más reciente en unirse al grupo original de los seis maratones más prestigiosos del mundo.",
     "difficulty": 1
   },
   {
@@ -344,7 +344,7 @@
       "Toronto."
     ],
     "answer": 1,
-    "ampliacion": "El Maratón de Sídney fue anunciado como el nuevo miembro de la serie...",
+    "ampliacion": "El Maratón de Sídney fue anunciado como el nuevo miembro de la serie, convirtiéndose en la séptima \"estrella\" que los corredores aficionados de todo el mundo querrán conseguir.",
     "difficulty": 2
   },
   {
@@ -352,11 +352,11 @@
     "options": [
       "Un corredor que ha ganado 6 maratones.",
       "Un corredor que ha completado los 6 World Marathon Majors originales.",
-      "Un corredor que ha establecido 6 récords...",
-      "Un atleta de élite..."
+      "Un corredor que ha establecido 6 récords mundiales.",
+      "Un atleta de élite patrocinado por 6 marcas."
     ],
     "answer": 1,
-    "ampliacion": "Es un reconocimiento muy codiciado en el mundo del running aficionado...",
+    "ampliacion": "Es un reconocimiento muy codiciado en el mundo del running aficionado, otorgado a quienes completan los maratones de Tokio, Boston, Londres, Berlín, Chicago y Nueva York.",
     "difficulty": 2
   },
   {
@@ -364,11 +364,11 @@
     "options": [
       "Es el único que se corre de noche.",
       "Es el único que exige a la mayoría de sus participantes un tiempo de clasificación.",
-      "Es el único con un recorrido plano.",
+      "Es el único con un recorrido completamente plano.",
       "Es el único que se celebra en invierno."
     ],
     "answer": 1,
-    "ampliacion": "A diferencia de los otros Majors que usan principalmente sistemas de lotería..., Boston exige a la mayoría de sus corredores haber logrado un tiempo mínimo...",
+    "ampliacion": "A diferencia de los otros Majors que usan principalmente sistemas de lotería para asignar dorsales, Boston exige a la mayoría de sus corredores haber logrado un tiempo mínimo en otro maratón.",
     "difficulty": 2
   },
   {
@@ -376,11 +376,11 @@
     "options": [
       "El punto de partida del Maratón de Nueva York.",
       "Una famosa y difícil subida en el recorrido del Maratón de Boston.",
-      "El apodo de la última milla...",
-      "Un tramo ventoso..."
+      "El apodo de la última milla del Maratón de Londres.",
+      "Un tramo ventoso en el Maratón de Chicago."
     ],
     "answer": 1,
-    "ampliacion": "Es la última de una serie de colinas en Newton, entre los kilómetros 20 y 21...",
+    "ampliacion": "Es la última de una serie de colinas en Newton, entre los kilómetros 32 y 33 del Maratón de Boston. Su nombre (\"Colina Rompecorazones\") se debe a su dureza y ubicación estratégica.",
     "difficulty": 2
   },
   {
@@ -392,19 +392,19 @@
       "Chicago."
     ],
     "answer": 2,
-    "ampliacion": "En el punto intermedio del Maratón de Boston, las estudiantes de la universidad femenina de Wellesley forman un \"túnel de gritos\"...",
+    "ampliacion": "En el punto intermedio del Maratón de Boston, las estudiantes de la universidad femenina de Wellesley forman un \"túnel de gritos\" de cientos de metros que anima a los corredores con un estruendo ensordecedor.",
     "difficulty": 2
   },
   {
     "question": "¿Por qué es famoso a nivel mundial el Maratón de Londres?",
     "options": [
-      "Por ser el más antiguo...",
+      "Por ser el más antiguo del mundo.",
       "Por ser el evento de recaudación de fondos de un solo día más grande del mundo.",
       "Por su clima extremadamente frío.",
-      "Por tener el récord de más participantes..."
+      "Por tener el récord de más participantes que un maratón."
     ],
     "answer": 1,
-    "ampliacion": "Más allá de la competición de élite, la identidad del Maratón de Londres está intrínsecamente ligada a la caridad...",
+    "ampliacion": "Más allá de la competición de élite, la identidad del Maratón de Londres está intrínsecamente ligada a la caridad, habiendo recaudado más de mil millones de libras para causas benéficas.",
     "difficulty": 2
   },
   {
@@ -416,7 +416,7 @@
       "Berlín."
     ],
     "answer": 3,
-    "ampliacion": "El recorrido del Maratón de Berlín es famoso por ser excepcionalmente plano...",
+    "ampliacion": "El recorrido del Maratón de Berlín es famoso por ser excepcionalmente plano, lo que, junto a las buenas condiciones climáticas habituales, lo convierte en el lugar ideal para batir récords mundiales.",
     "difficulty": 1
   },
   {
@@ -425,22 +425,22 @@
       "La Columna de la Victoria.",
       "El edificio del Reichstag.",
       "La Puerta de Brandeburgo.",
-      "El Muro de Berlín."
+      "Un trozo conservado del Muro de Berlín."
     ],
     "answer": 2,
-    "ampliacion": "El final del maratón es uno de los más icónicos del deporte. Pasar por la Puerta de Brandeburgo...",
+    "ampliacion": "El final del maratón es uno de los más icónicos del deporte. Pasar por la Puerta de Brandeburgo, un símbolo de la reunificación alemana, es un momento inolvidable para los corredores.",
     "difficulty": 1
   },
   {
     "question": "¿Qué característica única define al recorrido del Maratón de Chicago?",
     "options": [
       "Atraviesa 29 barrios diversos de la ciudad.",
-      "Es un recorrido de ida y vuelta...",
-      "Pasa por debajo del río Chicago.",
-      "Termina dentro de un estadio..."
+      "Es un recorrido de ida y vuelta por la misma avenida.",
+      "Pasa por debajo del río Chicago a través de un túnel.",
+      "Termina dentro de un estadio de béisbol."
     ],
     "answer": 0,
-    "ampliacion": "Su recorrido es un verdadero tour arquitectónico y cultural que lleva a los corredores a través de 29 barrios distintos...",
+    "ampliacion": "Su recorrido es un verdadero tour arquitectónico y cultural que lleva a los corredores a través de 29 barrios distintos, cada uno con su propia personalidad y ambiente.",
     "difficulty": 2
   },
   {
@@ -452,7 +452,7 @@
       "1990."
     ],
     "answer": 1,
-    "ampliacion": "Originalmente, la carrera consistía en dar vueltas dentro de Central Park. En 1976...",
+    "ampliacion": "Originalmente, la carrera consistía en dar vueltas dentro de Central Park. En 1976, para celebrar el bicentenario de EE.UU., se rediseñó el recorrido para que recorriera los 5 distritos.",
     "difficulty": 3
   },
   {
@@ -464,7 +464,7 @@
       "Tokio."
     ],
     "answer": 2,
-    "ampliacion": "Con más de 50,000 corredores cruzando la línea de meta cada año, el Maratón de Nueva York ostenta el título...",
+    "ampliacion": "Con más de 50,000 corredores cruzando la línea de meta cada año, el Maratón de Nueva York ostenta el título de ser la carrera de 42.195 km con más participantes del planeta.",
     "difficulty": 1
   },
   {
@@ -476,7 +476,7 @@
       "Berlín."
     ],
     "answer": 1,
-    "ampliacion": "World Athletics estipula que para que un récord mundial sea válido... Boston no cumple estos criterios.",
+    "ampliacion": "World Athletics estipula que la salida y la llegada no pueden estar separadas por más del 50% de la distancia de la carrera para que un récord sea válido. Boston, al ser un recorrido punto a punto, no cumple esta norma.",
     "difficulty": 3
   },
   {
@@ -485,10 +485,10 @@
       "El entrenamiento por intervalos.",
       "Correr siempre con un cronómetro para mantener un ritmo uniforme.",
       "El uso de calzado con clavos.",
-      "Una dieta basada en proteínas."
+      "Una dieta basada exclusivamente en proteínas."
     ],
     "answer": 1,
-    "ampliacion": "Nurmi fue un pionero del enfoque analítico y científico en las carreras...",
+    "ampliacion": "Nurmi fue un pionero del enfoque analítico y científico en las carreras. Siempre entrenaba y competía con un cronómetro en la mano para controlar su ritmo de forma precisa.",
     "difficulty": 2
   },
   {
@@ -500,31 +500,31 @@
       "Introducir el concepto de la tirada larga."
     ],
     "answer": 1,
-    "ampliacion": "Su hazaña en Helsinki 1952 es legendaria y considerada irrepetible...",
+    "ampliacion": "Su hazaña en Helsinki 1952 es legendaria y considerada irrepetible. Ganó el oro en 5.000m, 10.000m y, habiendo corrido su primer maratón, también ganó el oro en esa prueba.",
     "difficulty": 2
   },
   {
     "question": "¿Cuál es el legado de Abebe Bikila en la historia del running?",
     "options": [
-      "Ser el inventor de las zapatillas...",
+      "Ser el inventor de las zapatillas de correr modernas.",
       "Anunciar el comienzo del dominio de África Oriental y ser un símbolo del triunfo postcolonial.",
-      "Ser el primer atleta en ganar 5 oros...",
-      "Promover el running femenino..."
+      "Ser el primer atleta en ganar 5 oros olímpicos.",
+      "Promover el running femenino en África."
     ],
     "answer": 1,
-    "ampliacion": "Al ganar el maratón de Roma 1960 descalzo, Bikila se convirtió en el primer atleta negro africano en ganar un oro olímpico...",
+    "ampliacion": "Al ganar el maratón de Roma 1960 descalzo, Bikila se convirtió en el primer atleta negro africano en ganar un oro olímpico, inspirando a generaciones de corredores de su continente.",
     "difficulty": 2
   },
   {
     "question": "¿Cuál es el legado de Kathrine Switzer en el mundo del running?",
     "options": [
-      "La ciencia del entrenamiento.",
-      "La expansión global del deporte.",
+      "La ciencia del entrenamiento y la nutrición.",
+      "La expansión global del deporte a través de la televisión.",
       "La inclusión social y la rotura de barreras de género.",
       "La creación de los World Marathon Majors."
     ],
     "answer": 2,
-    "ampliacion": "Al desafiar la prohibición en Boston 1967 y con su posterior activismo, Switzer se convirtió en un pilar...",
+    "ampliacion": "Al desafiar la prohibición en Boston 1967 y con su posterior activismo, Switzer se convirtió en un pilar fundamental para lograr la inclusión del maratón femenino en los JJ.OO. y normalizar la presencia de la mujer en las carreras.",
     "difficulty": 1
   },
   {
@@ -536,7 +536,7 @@
       "9.49 s"
     ],
     "answer": 1,
-    "ampliacion": "El velocista jamaicano estableció su icónico récord mundial de 9.58 segundos...",
+    "ampliacion": "El velocista jamaicano estableció su icónico récord mundial de 9.58 segundos en el Campeonato Mundial de Atletismo de Berlín en 2009, una marca que sigue vigente.",
     "difficulty": 1
   },
   {
@@ -548,7 +548,7 @@
       "Kenenisa Bekele."
     ],
     "answer": 2,
-    "ampliacion": "El corredor keniano ha redefinido la disciplina... Aunque su marca de 1:59:40 no es un récord oficial...",
+    "ampliacion": "El corredor keniano ha redefinido la disciplina con sus victorias y récords. Aunque su marca de 1:59:40 no es un récord oficial, demostró que la barrera de las 2 horas es humanamente posible.",
     "difficulty": 1
   },
   {
@@ -560,43 +560,43 @@
       "1996."
     ],
     "answer": 1,
-    "ampliacion": "\"Flo-Jo\" tuvo un año 1988 extraordinario, estableciendo ambos récords mundiales...",
+    "ampliacion": "\"Flo-Jo\" tuvo un año 1988 extraordinario, estableciendo ambos récords mundiales de velocidad femenina, los cuales, décadas después, todavía no han sido superados.",
     "difficulty": 2
   },
   {
     "question": "¿Qué hito logró la atleta keniata Faith Kipyegon en 2023?",
     "options": [
-      "Ganar el maratón de Nueva York y Chicago...",
+      "Ganar el maratón de Nueva York y Chicago en el mismo año.",
       "Romper los récords mundiales de 1500m, la milla y 5000m en menos de 50 días.",
-      "Convertirse en la primera mujer en ganar 4 oros...",
-      "Bajar de los 4 minutos..."
+      "Convertirse en la primera mujer en ganar 4 oros olímpicos consecutivos.",
+      "Bajar de los 4 minutos en la milla corriendo hacia atrás."
     ],
     "answer": 1,
-    "ampliacion": "En un asombroso período de tiempo en 2023, Kipyegon demostró su dominio y versatilidad...",
+    "ampliacion": "En un asombroso período de tiempo en 2023, Kipyegon demostró su dominio y versatilidad en la media distancia estableciendo tres récords mundiales en tres pruebas diferentes.",
     "difficulty": 2
   },
   {
     "question": "¿Por qué es conocido el corredor español Kilian Jornet?",
     "options": [
-      "Por sus récords mundiales en pista...",
+      "Por sus récords mundiales en pista en 5.000m y 10.000m.",
       "Por su dominio en las carreras de ultra-trail más duras del mundo como el UTMB.",
       "Por ser el fundador del Maratón de Berlín.",
-      "Por su récord en la carrera de 100 millas..."
+      "Por su récord de completar 100 maratones en 100 días."
     ],
     "answer": 1,
-    "ampliacion": "Jornet es una leyenda viva del trail running. Ha ganado múltiples veces las carreras de montaña más prestigiosas...",
+    "ampliacion": "Jornet es una leyenda viva del trail running. Ha ganado múltiples veces las carreras de montaña más prestigiosas del mundo y es famoso por sus récords de ascenso y descenso de montañas icónicas.",
     "difficulty": 1
   },
   {
     "question": "¿Cuál es la hazaña sin precedentes de la ultramaratoniana Courtney Dauwalter en 2023?",
     "options": [
-      "Ganar la Badwater 135...",
+      "Ganar la Badwater 135, la carrera más calurosa del mundo.",
       "Correr 240 millas sin dormir.",
       "Ganar la Western States 100, la Hardrock 100 y el UTMB en un solo verano.",
-      "Establecer el récord mundial de 48 horas..."
+      "Establecer el récord mundial de 48 horas corriendo en cinta."
     ],
     "answer": 2,
-    "ampliacion": "Logró una \"triple corona\" considerada imposible en el mundo del ultra-trail...",
+    "ampliacion": "Logró una \"triple corona\" considerada imposible en el mundo del ultra-trail, ganando las tres carreras de 100 millas más competitivas y prestigiosas en el lapso de solo unos meses.",
     "difficulty": 2
   },
   {
@@ -608,7 +608,7 @@
       "Tamirat Tola."
     ],
     "answer": 1,
-    "ampliacion": "El joven corredor keniano Kelvin Kiptum rompió el récord mundial en el Maratón de Chicago de 2023...",
+    "ampliacion": "El joven corredor keniano Kelvin Kiptum rompió el récord mundial en el Maratón de Chicago de 2023, convirtiéndose en el primer hombre en bajar oficialmente de 2:01:00.",
     "difficulty": 1
   },
   {
@@ -620,7 +620,7 @@
       "Beatrice Chebet."
     ],
     "answer": 3,
-    "ampliacion": "La tabla de récords mundiales del texto indica que la corredora keniata Beatrice Chebet estableció el récord mundial...",
+    "ampliacion": "La corredora keniata Beatrice Chebet estableció el récord mundial de 10.000 metros en la Prefontaine Classic de 2024 con un tiempo de 28:54.14.",
     "difficulty": 3
   },
   {
@@ -632,11 +632,11 @@
       "Potente y explosivo."
     ],
     "answer": 1,
-    "ampliacion": "A diferencia de la fluidez de otros corredores, Zátopek era famoso por su estilo de carrera que parecía un sufrimiento constante...",
+    "ampliacion": "A diferencia de la fluidez de otros corredores, Zátopek era famoso por su estilo de carrera que parecía un sufrimiento constante, con la cabeza ladeada y una mueca de dolor en el rostro.",
     "difficulty": 2
   },
   {
-    "question": "¿Cuántos World Marathon Majors ha ganado Eliud Kipchoge?",
+    "question": "¿Cuántas veces ha ganado Eliud Kipchoge un maratón de los World Marathon Majors?",
     "options": [
       "5",
       "8",
@@ -644,7 +644,7 @@
       "15"
     ],
     "answer": 2,
-    "ampliacion": "El texto especifica que el dominio de Kipchoge en la distancia del maratón incluye haber ganado 11 de los World Marathon Majors...",
+    "ampliacion": "El dominio de Kipchoge en la distancia del maratón incluye haber ganado 11 de los World Marathon Majors que ha disputado, un logro que subraya su consistencia y grandeza.",
     "difficulty": 3
   },
   {
@@ -656,19 +656,19 @@
       "Cooper y Fixx."
     ],
     "answer": 1,
-    "ampliacion": "Emil Zátopek es considerado uno de los creadores del entrenamiento por intervalos, mientras que Bill Bowerman...",
+    "ampliacion": "Emil Zátopek es considerado uno de los creadores del entrenamiento por intervalos, mientras que Bill Bowerman (entrenador y cofundador de Nike) fue clave en la popularización del jogging en EEUU.",
     "difficulty": 3
   },
   {
     "question": "¿Qué es la Western States 100-Mile Endurance Run?",
     "options": [
-      "La carrera de 100 millas en ruta...",
+      "La carrera de 100 millas en ruta más rápida del mundo.",
       "La carrera de 100 millas en sendero (trail) más antigua del mundo.",
-      "Una carrera de 100 millas a través del desierto...",
+      "Una carrera de 100 millas a través del desierto del Sahara.",
       "Una carrera de 100 millas en la Antártida."
     ],
     "answer": 1,
-    "ampliacion": "Fundada en 1977, la Western States es la pionera de las ultramaratones de 100 millas...",
+    "ampliacion": "Fundada en 1977, la Western States es la pionera de las ultramaratones de 100 millas en sendero y una de las más prestigiosas del calendario de ultra-trail.",
     "difficulty": 2
   },
   {
@@ -676,59 +676,59 @@
     "options": [
       "Su altitud extrema.",
       "Sus temperaturas que pueden superar los 50 °C.",
-      "Sus 10.000 metros de desnivel...",
-      "La necesidad de cruzar ríos..."
+      "Sus 10.000 metros de desnivel positivo.",
+      "La necesidad de cruzar ríos infestados de pirañas."
     ],
     "answer": 1,
-    "ampliacion": "Se celebra en pleno julio en el Valle de la Muerte (California), uno de los lugares más calurosos del planeta...",
+    "ampliacion": "Se celebra en pleno julio en el Valle de la Muerte (California), uno de los lugares más calurosos del planeta, lo que supone un desafío extremo de gestión del calor y la hidratación.",
     "difficulty": 2
   },
   {
     "question": "¿En qué consiste la \"Man vs. Horse Marathon\"?",
     "options": [
-      "Una carrera donde los humanos intentan superar...",
-      "Una carrera de relevos...",
-      "Una carrera de 34 km donde corredores humanos compiten contra jinetes a caballo.",
-      "Una simulación virtual..."
+      "Una carrera donde los humanos intentan superar a un caballo en un sprint de 100 metros.",
+      "Una carrera de relevos entre equipos de humanos y equipos de caballos.",
+      "Una carrera de 35 km donde corredores humanos compiten contra jinetes a caballo.",
+      "Una simulación virtual de una carrera entre un humano y un caballo."
     ],
     "answer": 2,
-    "ampliacion": "Esta peculiar carrera anual en Gales, nacida de una apuesta en un pub...",
+    "ampliacion": "Esta peculiar carrera anual en Gales, nacida de una apuesta en un pub, enfrenta a corredores de trail contra jinetes a caballo en un recorrido montañoso. ¡Y a veces ganan los humanos!",
     "difficulty": 2
   },
   {
     "question": "¿Cuál es la peculiaridad de los puestos de avituallamiento en el \"Marathon du Médoc\"?",
     "options": [
-      "Solo ofrecen agua...",
+      "Solo ofrecen agua mineral de un manantial específico.",
       "Ofrecen vino, ostras, foie gras y queso.",
-      "Son gestionados por chefs...",
-      "No existen..."
+      "Son gestionados por chefs con estrellas Michelin.",
+      "No existen, los corredores deben ser autosuficientes."
     ],
     "answer": 1,
-    "ampliacion": "Este maratón en la región vinícola de Burdeos (Francia) es más una fiesta que una competición...",
+    "ampliacion": "Este maratón en la región vinícola de Burdeos (Francia) es más una fiesta que una competición. Los avituallamientos incluyen degustaciones de vinos de los famosos châteaux de la zona.",
     "difficulty": 1
   },
   {
     "question": "¿En qué consiste el \"Krispy Kreme Challenge\"?",
     "options": [
-      "Comer una docena de donuts antes...",
+      "Comer una docena de donuts antes de correr un maratón.",
       "Correr 4 km, comer una docena de donuts, y correr otros 4 km de vuelta.",
       "Una carrera donde los avituallamientos son solo donuts.",
-      "Intentar correr más rápido..."
+      "Intentar correr más rápido que la mascota de Krispy Kreme."
     ],
     "answer": 1,
-    "ampliacion": "Es un desafío que combina el esfuerzo físico con la capacidad estomacal...",
+    "ampliacion": "Es un desafío que combina el esfuerzo físico con la capacidad estomacal. Los participantes deben completar el recorrido de 8 km y comer los 12 donuts en menos de una hora.",
     "difficulty": 2
   },
   {
     "question": "La \"Self-Transcendence 3100 Mile Race\" es la carrera certificada más larga del mundo. ¿Cómo es su recorrido?",
     "options": [
-      "Atraviesa Estados Unidos...",
-      "Sube y baja el Everest...",
+      "Atraviesa Estados Unidos de costa a costa.",
+      "Sube y baja el Everest 15 veces.",
       "Da 5.649 vueltas a una sola manzana en Queens, Nueva York.",
       "Recorre el perímetro de Australia."
     ],
     "answer": 2,
-    "ampliacion": "Es una prueba de resistencia mental y física extrema. Los participantes deben correr casi 5.000 km...",
+    "ampliacion": "Es una prueba de resistencia mental y física extrema. Los participantes deben correr casi 5.000 km dando vueltas a un circuito de menos de 1 km, durante 52 días.",
     "difficulty": 3
   },
   {
@@ -740,7 +740,7 @@
       "2021."
     ],
     "answer": 1,
-    "ampliacion": "El proyecto de Nike para intentar bajar de las 2 horas en maratón en 2016 (aunque el intento fue en 2017)...",
+    "ampliacion": "El proyecto de Nike para intentar bajar de las 2 horas en maratón, anunciado en 2016 (aunque el intento fue en 2017), fue el catalizador que introdujo las \"superzapatillas\" en el mercado.",
     "difficulty": 2
   },
   {
@@ -752,7 +752,7 @@
       "15%."
     ],
     "answer": 1,
-    "ampliacion": "La combinación de la placa rígida de carbono y las espumas de alto rebote ha demostrado científicamente mejorar la eficiencia...",
+    "ampliacion": "La combinación de la placa rígida de carbono y las espumas de alto rebote ha demostrado científicamente mejorar la eficiencia del corredor en torno a un 4%, lo que se traduce en tiempos más rápidos.",
     "difficulty": 2
   },
   {
@@ -764,56 +764,56 @@
       "50 mm."
     ],
     "answer": 2,
-    "ampliacion": "Para evitar una \"carrera armamentística\" tecnológica..., la federación internacional de atletismo (World Athletics) estableció regulaciones...",
+    "ampliacion": "Para evitar una \"carrera armamentística\" tecnológica y asegurar una competencia justa, la federación internacional de atletismo (World Athletics) estableció regulaciones, limitando el grosor de la suela a 40 mm.",
     "difficulty": 3
   },
   {
-    "question": "¿Qué porcentaje de los corredores actuales, según el texto, comenzaron a correr durante la pandemia de COVID-19?",
+    "question": "¿Qué actividad sencilla es ideal para hacer después de correr y ayudar a la recuperación?",
     "options": [
-      "Alrededor del 10%.",
-      "Alrededor del 15%.",
-      "Casi el 29%.",
-      "Más del 40%."
+      "Sentarse inmediatamente.",
+      "Hacer sprints.",
+      "Caminar unos minutos y estirar suavemente.",
+      "Tomar una bebida muy azucarada."
     ],
     "answer": 2,
-    "ampliacion": "La pandemia provocó un segundo \"boom\" del running, ya que casi un tercio de la población actual de corredores se inició...",
-    "difficulty": 2
+    "ampliacion": "Terminar la sesión con una \"vuelta a la calma\", caminando un poco y haciendo estiramientos suaves, ayuda a reducir el ritmo cardíaco gradualmente y puede aliviar la tensión muscular.🧘",
+    "difficulty": 1
   },
   {
-    "question": "Según una estadística de 2018, ¿qué género constituye por primera vez la mayoría de los corredores recreativos?",
+    "question": "En los últimos años, ¿la participación en carreras populares ha sido mayoritariamente masculina o femenina?",
     "options": [
       "Los hombres, con un 55%.",
       "Las mujeres, con un 50.24%.",
       "La participación es exactamente 50/50.",
-      "No se disponen de datos..."
+      "No se disponen de datos de género."
     ],
     "answer": 1,
-    "ampliacion": "Este dato marca un hito histórico que refleja el éxito de la lucha por la inclusión...",
+    "ampliacion": "Por primera vez en la historia, la participación femenina en carreras ha superado a la masculina, marcando un hito que refleja el éxito de la lucha por la inclusión en este deporte.",
     "difficulty": 2
   },
   {
-    "question": "¿Cuántos pasos da, aproximadamente, un corredor aficionado para completar un maratón?",
+    "question": "¿Es bueno comer justo antes de salir a correr?",
     "options": [
-      "Entre 15.000 y 20.000.",
-      "Entre 25.000 y 30.000.",
-      "Entre 35.000 y 40.000.",
-      "Más de 50.000."
-    ],
-    "answer": 2,
-    "ampliacion": "Esta estadística ilustra la naturaleza repetitiva y de alto impacto del maratón...",
-    "difficulty": 3
-  },
-  {
-    "question": "El récord mundial de maratón corriendo hacia atrás es de:",
-    "options": [
-      "Menos de 3 horas.",
-      "3 horas, 42 minutos y 41 segundos.",
-      "4 horas, 15 minutos y 22 segundos.",
-      "Más de 5 horas."
+      "Sí, una comida grande te da más energía.",
+      "Es mejor esperar 1 o 2 horas después de comer.",
+      "Solo se puede beber agua.",
+      "Da igual, la comida no afecta."
     ],
     "answer": 1,
-    "ampliacion": "Este es uno de los datos curiosos que muestra el lado más insólito y peculiar del running...",
-    "difficulty": 3
+    "ampliacion": "Correr con el estómago lleno puede ser incómodo y causar flato. Es recomendable dejar pasar un tiempo tras una comida principal o tomar algo ligero, como una banana, si necesitas energía.🍌",
+    "difficulty": 1
+  },
+  {
+    "question": "¿Cuál es una forma divertida de correr si te aburres solo?",
+    "options": [
+      "Correr con los ojos cerrados.",
+      "Unirte a un club de corredores o quedar con un amigo.",
+      "Cantar muy alto mientras corres.",
+      "Correr siempre por el mismo sitio."
+    ],
+    "answer": 1,
+    "ampliacion": "Correr en compañía es una gran fuente de motivación. Compartir kilómetros con amigos o un grupo hace que el tiempo pase más rápido y te compromete a no fallar en tus entrenamientos. 🧑‍🤝‍🧑",
+    "difficulty": 1
   },
   {
     "question": "¿Qué carrera de ultra-trail es considerada la más prestigiosa y competitiva del mundo, rodeando el macizo del Mont Blanc?",
@@ -824,7 +824,7 @@
       "Badwater 135."
     ],
     "answer": 2,
-    "ampliacion": "El UTMB es la cumbre del trail running mundial...",
+    "ampliacion": "El UTMB es la cumbre del trail running mundial, una carrera de 171 km que atraviesa Francia, Italia y Suiza, y es considerada la final no oficial del campeonato del mundo de ultra-trail.",
     "difficulty": 1
   },
   {
@@ -836,7 +836,7 @@
       "La Maratón de los Andes."
     ],
     "answer": 2,
-    "ampliacion": "Celebrada a 4,380 metros sobre el nivel del mar, esta carrera en Perú ostenta el título...",
+    "ampliacion": "Celebrada a 4,380 metros sobre el nivel del mar, esta carrera en Perú ostenta el título de la maratón certificada a mayor altitud, un desafío extremo por la falta de oxígeno.",
     "difficulty": 3
   },
   {
@@ -848,19 +848,19 @@
       "Ricardo Abad."
     ],
     "answer": 3,
-    "ampliacion": "Este dato curioso destaca una de las hazañas de resistencia más extraordinarias...",
+    "ampliacion": "El navarro Ricardo Abad logró este increíble Récord Guinness, demostrando una capacidad de recuperación y una fortaleza mental fuera de lo común.",
     "difficulty": 3
   },
   {
     "question": "El origen de la Western States 100 se debe a que Gordy Ainsleigh decidió...",
     "options": [
-      "Crear la carrera de trail más dura...",
+      "Crear la carrera de trail más dura del planeta para probar a los marines.",
       "Correr a pie el recorrido de una carrera de caballos al no tener un caballo ese año.",
-      "Demostrar que podía correr 100 millas...",
-      "Apostar con sus amigos..."
+      "Demostrar que podía correr 100 millas más rápido que un tren.",
+      "Apostar con sus amigos que podía cruzar las montañas de Sierra Nevada corriendo."
     ],
     "answer": 1,
-    "ampliacion": "La carrera de 100 millas más antigua del mundo nació de forma casi accidental...",
+    "ampliacion": "La carrera de 100 millas más antigua del mundo nació de forma casi accidental, cuando en 1974 el caballo de Gordy Ainsleigh se lesionó antes de la Tevis Cup (una carrera ecuestre) y él decidió hacerla a pie.",
     "difficulty": 2
   },
   {
@@ -872,20 +872,20 @@
       "The Cotswold Chase."
     ],
     "answer": 1,
-    "ampliacion": "Es una de las competiciones más peculiares y peligrosas del mundo...",
+    "ampliacion": "Es una de las competiciones más peculiares y peligrosas del mundo. Cientos de participantes se lanzan por una colina casi vertical para atrapar un queso Double Gloucester que rueda a más de 100 km/h.",
     "difficulty": 2
   },
   {
-    "question": "El aumento de lesiones en el tendón de Aquiles desde los años 70 coincide con:",
+    "question": "Si llevas zapatillas con mucha amortiguación, ¿significa que no te puedes lesionar?",
     "options": [
-      "El auge del calzado moderno y acolchado.",
-      "La popularización del entrenamiento en cuestas.",
-      "La disminución del estiramiento...",
-      "La introducción de las pistas de tartán."
+      "Sí, la amortiguación lo previene todo.",
+      "No, ninguna zapatilla elimina el riesgo de lesión.",
+      "Solo si la amortiguación es de gel.",
+      "Depende de si corres en asfalto o en tierra."
     ],
-    "answer": 0,
-    "ampliacion": "El texto plantea una correlación interesante, sugiriendo que el aumento del 10% en este tipo de lesiones podría estar vinculado...",
-    "difficulty": 3
+    "answer": 1,
+    "ampliacion": "Aunque la amortiguación puede hacer que correr sea más cómodo, no es una garantía contra las lesiones. La técnica de carrera, la fuerza y no aumentar el volumen bruscamente son igual o más importantes.",
+    "difficulty": 1
   },
   {
     "question": "¿Qué corredor era conocido por su lema \"Ningún humano está limitado\"?",
@@ -896,11 +896,11 @@
       "Eliud Kipchoge."
     ],
     "answer": 3,
-    "ampliacion": "Este mantra define la filosofía de Eliud Kipchoge...",
+    "ampliacion": "Este mantra define la filosofía de Eliud Kipchoge, que le impulsó en su proyecto de bajar de las 2 horas en maratón y que inspira a corredores de todo el mundo.",
     "difficulty": 1
   },
   {
-    "question": "Kelvin Kiptum y Ruth Chepngetich establecieron sus récords mundiales de maratón en la misma ciudad. ¿Cuál?",
+    "question": "Kelvin Kiptum y Ruth Chepngetich establecieron récords de maratón en la misma ciudad. ¿Cuál?",
     "options": [
       "Berlín.",
       "Londres.",
@@ -908,11 +908,11 @@
       "Valencia."
     ],
     "answer": 2,
-    "ampliacion": "La sección de los Majors y la tabla de récords confirman que el recorrido plano y rápido de Chicago fue el escenario...",
+    "ampliacion": "El recorrido plano y rápido de Chicago fue el escenario donde tanto Kelvin Kiptum (récord mundial masculino en 2023) como Ruth Chepngetich (récord mundial femenino en 2024) lograron sus marcas históricas.",
     "difficulty": 2
   },
   {
-    "question": "¿Qué dos leyendas, una de pista y otra de trail, son conocidas por su dominio absoluto?",
+    "question": "¿Qué dos leyendas, una de pista y otra de trail, son conocidas por su dominio absoluto en sus disciplinas?",
     "options": [
       "Usain Bolt y Courtney Dauwalter.",
       "Eliud Kipchoge y Kilian Jornet.",
@@ -920,55 +920,55 @@
       "Emil Zátopek y Scott Jurek."
     ],
     "answer": 1,
-    "ampliacion": "Kipchoge ha redefinido lo que es posible en el maratón en ruta, mientras que Jornet ha hecho lo propio en el ultra-trail...",
+    "ampliacion": "Kipchoge ha redefinido lo que es posible en el maratón en ruta, mientras que Jornet ha hecho lo propio en el ultra-trail de montaña, siendo ambos considerados los más grandes de la historia en sus campos.",
     "difficulty": 3
   },
   {
-    "question": "¿Cuál de estos eventos ocurrió ANTES: la primera victoria de un humano en la \"Man vs. Horse Marathon\" o la creación del Maratón de Tokio?",
+    "question": "¿Cuándo se ganó por primera vez la \"Man vs. Horse Marathon\" por un humano y cuándo se creó el Maratón de Tokio?",
     "options": [
-      "La creación del Maratón de Tokio.",
-      "La victoria del humano en la \"Man vs. Horse Marathon\".",
-      "Ocurrieron el mismo año.",
-      "El texto no proporciona fechas..."
+      "La victoria humana fue en 1999 y Tokio se creó en 2001.",
+      "La victoria humana fue en 2004 y Tokio se creó en 2007.",
+      "Ocurrieron el mismo año, en 2005.",
+      "La victoria humana fue en 2010 y Tokio en 2008."
     ],
     "answer": 1,
-    "ampliacion": "El texto indica que un humano ganó por primera vez la \"Man vs. Horse Marathon\" en 2004. El Maratón de Tokio... se celebró en 2007.",
+    "ampliacion": "Huw Lobb fue el primer corredor en vencer a todos los caballos en 2004. El Maratón de Tokio, el Major más joven, celebró su primera edición tres años después, en 2007.",
     "difficulty": 3
   },
   {
-    "question": "El \"doble propósito\" ancestral del running (supervivencia y competición) se refleja hoy en el corredor moderno que corre para...",
+    "question": "Hoy en día, ¿por qué corre la mayoría de la gente?",
     "options": [
-      "Ganar dinero y fama.",
-      "Mantenerse sano y batir una marca personal.",
-      "Viajar por el mundo...",
-      "Socializar y mejorar..."
+      "Para ganar medallas de oro.",
+      "Para mantenerse sano y por satisfacción personal.",
+      "Para ser famoso en redes sociales.",
+      "Para no tener que usar el coche."
     ],
     "answer": 1,
-    "ampliacion": "El texto establece este paralelismo: correr para \"despejar la mente y mantenerse sano\" es una forma moderna de \"supervivencia\"...",
-    "difficulty": 2
+    "ampliacion": "Mientras que antes se corría por supervivencia, hoy la gente corre para mejorar su salud física y mental, y por el placer de superarse a sí misma, como al terminar una carrera o lograr un objetivo.",
+    "difficulty": 1
   },
   {
-    "question": "¿Qué tienen en común el Maratón de Boston y la carrera Badwater 135?",
+    "question": "¿Qué tienen en común las carreras de Boston y Badwater?",
     "options": [
-      "Ambos requieren tiempos de clasificación.",
-      "Ambos son conocidos por sus colinas infames.",
-      "Ambos son de los maratones más antiguos.",
-      "El texto no señala ninguna similitud directa..."
-    ],
-    "answer": 3,
-    "ampliacion": "Aunque ambas son carreras icónicas, el texto las describe con características muy distintas...",
-    "difficulty": 3
-  },
-  {
-    "question": "La introducción de zapatillas con placa de carbono afectó más directamente a cuál de los tres pilares fisiológicos?",
-    "options": [
-      "VO2 Máx.",
-      "Umbral de Lactato.",
-      "Economía de Carrera.",
-      "Frecuencia Cardíaca Máxima."
+      "Ambas son de la misma distancia.",
+      "Ambas se corren en el mes de abril.",
+      "Ambas son carreras muy famosas en Estados Unidos.",
+      "Ambas tienen un recorrido totalmente plano."
     ],
     "answer": 2,
-    "ampliacion": "El texto explica que la tecnología de las \"superzapatillas\" mejora la economía de carrera en un 4%...",
+    "ampliacion": "Aunque son muy diferentes (Boston es un maratón en ciudad y Badwater una ultramaratón en el desierto), ambas son pruebas icónicas y muy conocidas dentro del mundo del running en EE.UU.",
+    "difficulty": 1
+  },
+  {
+    "question": "Las zapatillas con placa de carbono ayudan a los corredores a ser más eficientes. ¿Qué significa esto?",
+    "options": [
+      "Que los cordones no se desatan nunca.",
+      "Que los pies no sudan.",
+      "Que se gasta menos energía para correr al mismo ritmo.",
+      "Que las zapatillas cambian de color con la velocidad."
+    ],
+    "answer": 2,
+    "ampliacion": "Esta tecnología funciona como un resorte que impulsa al corredor hacia adelante, lo que significa que su cuerpo necesita esforzarse un poco menos para mantener una velocidad determinada.",
     "difficulty": 2
   },
   {
@@ -980,103 +980,103 @@
       "Boston y Londres."
     ],
     "answer": 2,
-    "ampliacion": "El texto describe explícitamente a Berlín como \"el circuito de los récords mundiales\" y a Chicago como \"excepcionalmente plano y rápido\"...",
+    "ampliacion": "Berlín y Chicago son los maratones preferidos por los atletas de élite para intentar batir récords mundiales debido a sus recorridos con muy pocas cuestas y largas rectas.",
     "difficulty": 2
   },
   {
-    "question": "¿Cuál de estas figuras históricas NO está directamente relacionada con la historia del Maratón de Boston?",
+    "question": "¿Quién de los siguientes NO está directamente relacionado con la historia del Maratón de Boston?",
     "options": [
       "Kathrine Switzer.",
       "Jock Semple.",
       "Bobbi Gibb.",
-      "Chris Brasher."
+      "Emil Zátopek."
     ],
     "answer": 3,
-    "ampliacion": "Switzer, Semple y Gibb son figuras centrales en la historia de Boston. Chris Brasher, sin embargo, es mencionado como el cofundador del Maratón de Londres...",
+    "ampliacion": "Switzer, Semple y Gibb son figuras centrales en la lucha por la participación femenina en Boston. Emil Zátopek, la \"Locomotora Checa\", es famoso por sus hazañas olímpicas, no por su relación con Boston.",
     "difficulty": 3
   },
   {
-    "question": "El libro \"Aerobics\" del Dr. Ken Cooper y el libro \"The Complete Book of Running\" de Jim Fixx fueron fundamentales para:",
+    "question": "Dos libros muy famosos ayudaron a que mucha gente empezara a correr en los años 70. ¿De qué trataban?",
     "options": [
-      "La creación de los Juegos Olímpicos...",
-      "La revolución del calzado minimalista.",
-      "El \"running boom\" de los años 70.",
-      "El desarrollo del ultra-trail."
+      "Sobre cómo ganar los Juegos Olímpicos.",
+      "Sobre los beneficios del ejercicio aeróbico y guías para correr.",
+      "Sobre recetas de cocina para corredores.",
+      "Sobre la historia de las zapatillas."
     ],
-    "answer": 2,
-    "ampliacion": "Estos dos libros son citados como pilares del auge del running...",
+    "answer": 1,
+    "ampliacion": "El libro \"Aerobics\" del Dr. Ken Cooper explicó científicamente los beneficios para la salud de correr, y \"The Complete Book of Running\" de Jim Fixx se convirtió en la biblia para los nuevos corredores.",
     "difficulty": 2
   },
   {
-    "question": "¿Cuál de estos récords mundiales fue establecido más recientemente, según la tabla?",
+    "question": "El récord mundial de maratón femenino actual fue establecido en 2024. ¿Quién lo ostenta?",
     "options": [
-      "El de 100m masculino de Usain Bolt.",
-      "El de 100m femenino de Florence Griffith-Joyner.",
-      "El de maratón masculino de Kelvin Kiptum.",
-      "El de maratón femenino de Ruth Chepngetich."
+      "Tigist Assefa.",
+      "Brigid Kosgei.",
+      "Paula Radcliffe.",
+      "Ruth Chepngetich."
     ],
     "answer": 3,
-    "ampliacion": "Al revisar las fechas en la Tabla 4, el récord de maratón femenino de Chepngetich (13 de octubre de 2024) es el más reciente...",
+    "ampliacion": "La corredora keniana Ruth Chepngetich estableció el increíble récord mundial de 2:09:56 en el Maratón de Chicago el 13 de octubre de 2024, siendo la primera mujer en bajar de 2h 10min.",
     "difficulty": 3
   },
   {
-    "question": "¿Por qué la hazaña histórica de Filípides según Heródoto se podría considerar un precursor del \"ultra-running\"?",
+    "question": "¿Por qué la increíble carrera de Filípides de Atenas a Esparta se considera un precursor del \"ultra-running\"?",
     "options": [
-      "Porque corrió una distancia superior a un maratón...",
-      "Porque corrió por terreno montañoso...",
-      "Porque lo hizo en un tiempo récord...",
+      "Porque corrió una distancia mucho mayor que un maratón.",
+      "Porque corrió por un terreno difícil y montañoso.",
+      "Porque lo hizo para cumplir una misión y no solo por competir.",
       "Todas las anteriores."
     ],
     "answer": 3,
-    "ampliacion": "La descripción de Heródoto de un viaje de casi 500 km... contiene todos los elementos que definen el moderno deporte del ultra-running.",
+    "ampliacion": "La hazaña de Filípides de correr casi 500 km por terreno irregular no era una competición, sino una misión. Esto engloba la esencia del ultra-running: cubrir distancias extremas por paisajes desafiantes.",
     "difficulty": 3
   },
   {
     "question": "El concepto de \"splits negativos\" es una estrategia que consiste en:",
     "options": [
-      "Correr la primera mitad más rápido...",
-      "Correr a un ritmo constante...",
-      "Correr la segunda mitad más rápido que la primera.",
-      "Dividir la carrera en segmentos..."
+      "Correr la primera mitad de la carrera más rápido que la segunda.",
+      "Correr a un ritmo constante de principio a fin.",
+      "Correr la segunda mitad de la carrera más rápido que la primera.",
+      "Dividir la carrera en segmentos de sprint y descanso."
     ],
     "answer": 2,
-    "ampliacion": "Es una estrategia de carrera inteligente y controlada... el corredor gestiona su energía para poder acelerar en la segunda parte...",
+    "ampliacion": "Es una estrategia de carrera inteligente y controlada. El corredor gestiona su energía para poder acelerar en la segunda parte, adelantando a otros que empezaron demasiado rápido.",
     "difficulty": 2
   },
   {
-    "question": "La debilidad en los músculos de la cadera y los glúteos es una causa común de qué lesión?",
+    "question": "Si te duele la parte externa de la rodilla al correr, ¿cuál puede ser una causa común?",
     "options": [
-      "Fascitis Plantar.",
-      "Rodilla del Corredor.",
-      "Tendinitis Aquílea.",
-      "Periostitis Tibial."
+      "Tener los cordones demasiado apretados.",
+      "Debilidad en los músculos de la cadera y los glúteos.",
+      "No llevar una gorra para el sol.",
+      "Correr demasiado despacio."
     ],
     "answer": 1,
-    "ampliacion": "La Tabla 1 de lesiones indica que la debilidad en la musculatura de la cadera y los glúteos es una de las causas más comunes...",
+    "ampliacion": "La famosa \"rodilla del corredor\" a menudo se debe a que músculos más grandes como los de la cadera o los glúteos no son lo suficientemente fuertes, haciendo que la rodilla trabaje de más.",
     "difficulty": 2
   },
   {
-    "question": "El \"Avon International Running Circuit\" fue crucial para presionar al COI para incluir ¿qué evento en los Juegos Olímpicos?",
+    "question": "El \"Avon International Running Circuit\" fue una serie de carreras crucial para que se incluyera un evento muy importante en los Juegos Olímpicos. ¿Cuál?",
     "options": [
       "El 1500m femenino.",
       "El maratón femenino.",
-      "El 3000m con obstáculos...",
+      "El 3000m con obstáculos femenino.",
       "El 10.000m femenino."
     ],
     "answer": 1,
-    "ampliacion": "Fundado por Kathrine Switzer, este circuito de carreras para mujeres... fue una herramienta de presión fundamental...",
+    "ampliacion": "Fundado por Kathrine Switzer, este circuito de carreras exclusivo para mujeres demostró al Comité Olímpico Internacional (COI) que las mujeres estaban perfectamente capacitadas para correr largas distancias.",
     "difficulty": 3
   },
   {
-    "question": "¿En qué maratón se estableció un Récord Guinness por registrar más de 3.000 nuevos \"Six Star Finishers\" en un solo evento?",
+    "question": "¿En qué maratón se consiguió un Récord Guinness por más de 3.000 personas convirtiéndose en \"Six Star Finishers\" el mismo día?",
     "options": [
       "Londres 2022.",
       "Nueva York 2023.",
-      "Tokio 2023.",
+      "Tokio 2024.",
       "Boston 2024."
     ],
-    "answer": 0,
-    "ampliacion": "El texto destaca este récord como una prueba de la enorme popularidad del desafío de los Majors...",
+    "answer": 2,
+    "ampliacion": "En el Maratón de Tokio de 2024, más de 3.000 corredores completaron su sexto y último Major, recibiendo la codiciada medalla de las Seis Estrellas, lo que demuestra la popularidad global de este desafío.",
     "difficulty": 3
   },
   {
@@ -1088,23 +1088,23 @@
       "Jesse Owens."
     ],
     "answer": 2,
-    "ampliacion": "El apodo \"Rayo Bolt\" (\"Lightning Bolt\" en inglés) es mundialmente famoso...",
+    "ampliacion": "El apodo \"Rayo Bolt\" (\"Lightning Bolt\" en inglés) es mundialmente famoso y acompaña al hombre más rápido de la historia, Usain Bolt, por su increíble velocidad y su icónico gesto de celebración.",
     "difficulty": 1
   },
   {
-    "question": "¿Qué tienen en común Joshua Cheptegei y Letesenbet Gidey?",
+    "question": "¿Qué tienen en común los atletas Joshua Cheptegei y Letesenbet Gidey?",
     "options": [
-      "Ambos son de Kenia...",
-      "Ambos establecieron récords mundiales en Valencia.",
-      "Ambos son dobles campeones...",
-      "Ambos son pioneros..."
+      "Ambos son de Kenia y especialistas en maratón.",
+      "Ambos establecieron récords mundiales en pista en Valencia.",
+      "Ambos son dobles campeones olímpicos de 100 metros.",
+      "Ambos son pioneros del trail running."
     ],
     "answer": 1,
-    "ampliacion": "Aunque no el mismo día, la ciudad de Valencia (España) fue el escenario donde ambos batieron récords mundiales...",
+    "ampliacion": "La ciudad de Valencia (España) fue el escenario donde ambos atletas batieron récords mundiales de fondo en pista (Cheptegei el de 10.000m y Gidey el de 5.000m en 2020).",
     "difficulty": 3
   },
   {
-    "question": "Una referencia de cadencia común, aunque no una regla estricta, es de alrededor de:",
+    "question": "Una referencia de cadencia común para correr de forma eficiente, aunque no una regla estricta, es de alrededor de:",
     "options": [
       "120 pasos por minuto.",
       "150 pasos por minuto.",
@@ -1112,23 +1112,23 @@
       "210 pasos por minuto."
     ],
     "answer": 2,
-    "ampliacion": "El texto menciona 180 ppm como una cifra de referencia popularizada...",
+    "ampliacion": "Se popularizó la idea de que dar unos 180 pasos por minuto ayuda a reducir el impacto y a ser más eficiente, aunque cada corredor debe encontrar la cadencia que le resulte más natural.",
     "difficulty": 2
   },
   {
-    "question": "¿Qué dos eventos extremos se mencionan por sus condiciones de temperatura opuestas?",
+    "question": "Para un corredor, ¿qué dos carreras representan los extremos de frío y calor?",
     "options": [
       "UTMB y Western States.",
-      "Maratón de Hielo de Siberia y Badwater 135.",
-      "Maratón del Polo Norte y Maratón des Sables.",
-      "Carrera del Fin del Mundo..."
+      "Maratón de Londres y Maratón de Madrid.",
+      "Maratón del Polo Norte y Maratón de Badwater.",
+      "Carrera del Fin del Mundo y Maratón del Sol de Medianoche."
     ],
     "answer": 2,
-    "ampliacion": "El texto contrasta estos dos extremos: el Maratón de Hielo de Siberia... y la Badwater 135...",
+    "ampliacion": "El Maratón del Polo Norte se corre sobre hielo a temperaturas de -40°C, mientras que la Ultramaratón de Badwater 135 se corre en el Valle de la Muerte a más de 50°C. ¡Dos desafíos opuestos!",
     "difficulty": 2
   },
   {
-    "question": "El dominio de Paavo Nurmi ocurrió principalmente en la década de:",
+    "question": "El dominio de Paavo Nurmi, el \"Finlandés Volador\", ocurrió principalmente en la década de:",
     "options": [
       "1910.",
       "1920.",
@@ -1136,7 +1136,7 @@
       "1940."
     ],
     "answer": 1,
-    "ampliacion": "Paavo Nurmi, el \"Finlandés Volador\", fue el gran dominador del atletismo de fondo en la década de 1920...",
+    "ampliacion": "Paavo Nurmi fue el gran dominador del atletismo de fondo en la década de 1920, ganando un total de 9 medallas de oro olímpicas y estableciendo numerosos récords mundiales.",
     "difficulty": 2
   },
   {
@@ -1148,7 +1148,7 @@
       "\"Corazón y Suela\"."
     ],
     "answer": 2,
-    "ampliacion": "El perfil del Maratón de Tokio... especifica que su lema oficial es \"The Day We Unite\"...",
+    "ampliacion": "El lema oficial del Maratón de Tokio es \"The Day We Unite\" (\"El Día que Nos Unimos\"), reflejando cómo el evento une a corredores de élite, aficionados, voluntarios y espectadores.",
     "difficulty": 3
   },
   {
@@ -1160,19 +1160,19 @@
       "Bill Rodgers."
     ],
     "answer": 3,
-    "ampliacion": "A diferencia de la imagen más elitista de Frank Shorter, Bill Rodgers era percibido como un corredor más cercano al \"hombre de la calle\"...",
+    "ampliacion": "A diferencia de la imagen más elitista de Frank Shorter, Bill Rodgers era percibido como un corredor más cercano al \"hombre de la calle\", lo que le convirtió en un héroe popular del running boom de los 70.",
     "difficulty": 2
   },
   {
     "question": "¿En qué se diferencian principalmente un entrenamiento de \"Series\" y un \"Fartlek\"?",
     "options": [
-      "Las series son en cuesta...",
+      "Las series son en cuesta y el fartlek es en llano.",
       "Las series son estructuradas (distancias/tiempos fijos) y el fartlek no.",
-      "Las series mejoran la resistencia...",
-      "No hay ninguna diferencia..."
+      "Las series mejoran la resistencia y el fartlek la velocidad.",
+      "No hay ninguna diferencia, son lo mismo."
     ],
     "answer": 1,
-    "ampliacion": "El glosario de términos lo deja claro: las series son repeticiones de alta intensidad... El Fartlek... es un entrenamiento libre y no estructurado...",
+    "ampliacion": "Las series son repeticiones de alta intensidad con descansos pautados (ej: 5x1000m). El Fartlek, o \"juego de velocidad\", es libre y no estructurado, alternando ritmos por sensaciones.",
     "difficulty": 1
   },
   {
@@ -1184,19 +1184,19 @@
       "Frank Shorter."
     ],
     "answer": 2,
-    "ampliacion": "Después de su histórica victoria descalzo en Roma 1960, el etíope Abebe Bikila volvió a ganar el oro en Tokio 1964...",
+    "ampliacion": "Después de su histórica victoria descalzo en Roma 1960, el etíope Abebe Bikila volvió a ganar el oro en Tokio 1964, pero esta vez calzando zapatillas, convirtiéndose en el primer hombre en ganar dos maratones olímpicos.",
     "difficulty": 2
   },
   {
-    "question": "El texto concluye que la historia del running es, en última instancia, la historia de la resistencia, la innovación y...",
+    "question": "Si tuvieras que definir el running en tres palabras, ¿cuáles serían?",
     "options": [
-      "La búsqueda de la fama.",
-      "La comercialización del deporte.",
-      "La inquebrantable voluntad de seguir avanzando.",
-      "La competencia entre naciones."
+      "Fama, dinero y gloria.",
+      "Rápido, fácil y corto.",
+      "Resistencia, superación y comunidad.",
+      "Soledad, dolor y aburrimiento."
     ],
     "answer": 2,
-    "ampliacion": "La frase final del compendio resume la esencia del running no solo como deporte, sino como metáfora de la condición humana...",
-    "difficulty": 3
+    "ampliacion": "El running es un viaje de resistencia física y mental, una constante búsqueda de superación personal y una forma de conectar con una comunidad global de apasionados. ¡A correr! 🚀",
+    "difficulty": 1
   }
 ]
